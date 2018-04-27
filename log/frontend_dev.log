@@ -1,0 +1,560 @@
+Apr 26 11:59:24 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 11:59:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 11:59:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 11:59:28 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 11:59:28 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/newSuccess.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_assets.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_flashes.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_header.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_fieldset.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:28 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Apr 26 11:59:28 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p - ()
+Apr 26 11:59:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:29 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Apr 26 11:59:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:29 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT m.id AS m__id, m.descripcion AS m__descripcion, m.estado_id AS m__estado_id, m.municipio_codigo AS m__municipio_codigo FROM municipio m - ()
+Apr 26 11:59:31 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:31 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.municipio_id AS p__municipio_id, p.estado_codigo AS p__estado_codigo, p.municipio_codigo AS p__municipio_codigo, p.parroquia_codigo AS p__parroquia_codigo FROM parroquia p - ()
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_footer.php"
+Apr 26 11:59:35 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_themeswitcher.php"
+Apr 26 11:59:35 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 11:59:35 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 11:59:35 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 11:59:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 11:59:35 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 11:59:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Configuration 3801.83 ms (13)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Factories 444.30 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 78.95 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion/new" 7297.17 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_assets" 1.73 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_flashes" 9.56 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_header" 2.23 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form" 7059.13 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_actions" 4.78 ms (2)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_fieldset" 7015.89 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_field" 6994.87 ms (25)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 28.55 ms (5)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 1.59 ms (1)
+Apr 26 11:59:35 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 1.43 ms (1)
+Apr 26 11:59:36 symfony [info] {sfWebResponse} Send content (359358 o)
+Apr 26 11:59:36 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 11:59:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 11:59:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 11:59:36 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 11:59:36 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/newSuccess.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_assets.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_flashes.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_header.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_fieldset.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:36 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Apr 26 11:59:36 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p - ()
+Apr 26 11:59:37 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:37 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Apr 26 11:59:37 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:37 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT m.id AS m__id, m.descripcion AS m__descripcion, m.estado_id AS m__estado_id, m.municipio_codigo AS m__municipio_codigo FROM municipio m - ()
+Apr 26 11:59:39 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:39 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.municipio_id AS p__municipio_id, p.estado_codigo AS p__estado_codigo, p.municipio_codigo AS p__municipio_codigo, p.parroquia_codigo AS p__parroquia_codigo FROM parroquia p - ()
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_footer.php"
+Apr 26 11:59:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_themeswitcher.php"
+Apr 26 11:59:43 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 11:59:43 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 11:59:43 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 11:59:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 11:59:43 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 11:59:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Configuration 37.05 ms (11)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Factories 106.26 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 85.17 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion/new" 6934.80 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_assets" 2.81 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_flashes" 2.50 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_header" 2.92 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form" 6799.99 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_actions" 7.23 ms (2)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_fieldset" 6775.24 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_field" 6751.69 ms (25)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 11.95 ms (5)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 1.84 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 1.88 ms (1)
+Apr 26 11:59:43 symfony [info] {sfWebResponse} Send content (359354 o)
+Apr 26 14:21:42 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 14:21:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 14:21:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 14:21:45 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 14:21:45 symfony [err] {InvalidArgumentException} Field "pnfa" does not exist.
+Apr 26 14:21:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 26 14:21:45 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:21:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 14:21:45 symfony [info] {sfWebDebugLogger} Configuration 3880.52 ms (10)
+Apr 26 14:21:45 symfony [info] {sfWebDebugLogger} Factories 331.02 ms (1)
+Apr 26 14:21:45 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 116.11 ms (1)
+Apr 26 14:21:52 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 14:21:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 14:21:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 14:21:52 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 14:21:52 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/newSuccess.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_assets.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_flashes.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_header.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\apps\frontend\modules/preinscripcion/templates/_form_fieldset.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:52 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\symfony-1.4.20\lib\plugins\sfDoctrinePlugin\lib\widget\sfWidgetFormDoctrineChoice.class.php on line 84 (Uninitialized string offset: 1)
+Apr 26 14:21:53 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Apr 26 14:21:53 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p ORDER BY 2  - ()
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion FROM pnfa p - ()
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_footer.php"
+Apr 26 14:21:54 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_themeswitcher.php"
+Apr 26 14:21:54 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 14:21:54 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 14:21:54 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:21:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 14:21:54 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:21:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Configuration 76.68 ms (12)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Factories 78.75 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 113.20 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion/new" 1728.68 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_assets" 1.76 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_flashes" 8.59 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_header" 1.77 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form" 1535.41 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_actions" 24.79 ms (2)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_fieldset" 1484.44 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_field" 1454.52 ms (27)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 19.62 ms (4)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 1.48 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 2.24 ms (1)
+Apr 26 14:21:54 symfony [info] {sfWebResponse} Send content (332399 o)
+Apr 26 14:21:54 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 14:21:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 14:21:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 14:21:55 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 14:21:55 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/newSuccess.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_assets.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_flashes.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_header.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\apps\frontend\modules/preinscripcion/templates/_form_fieldset.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:55 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\symfony-1.4.20\lib\plugins\sfDoctrinePlugin\lib\widget\sfWidgetFormDoctrineChoice.class.php on line 84 (Uninitialized string offset: 1)
+Apr 26 14:21:55 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Apr 26 14:21:55 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p ORDER BY 2  - ()
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion FROM pnfa p - ()
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_footer.php"
+Apr 26 14:21:56 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_themeswitcher.php"
+Apr 26 14:21:56 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 14:21:56 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 14:21:56 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:21:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 14:21:56 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:21:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Configuration 40.57 ms (11)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Factories 82.42 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 88.72 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion/new" 1650.64 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_assets" 4.13 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_flashes" 3.34 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_header" 2.81 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form" 1513.08 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_actions" 10.68 ms (2)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_fieldset" 1483.11 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_field" 1448.54 ms (27)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 15.60 ms (4)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 1.98 ms (1)
+Apr 26 14:21:56 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 2.92 ms (1)
+Apr 26 14:21:57 symfony [info] {sfWebResponse} Send content (332367 o)
+Apr 26 14:55:57 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 14:56:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 14:56:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 14:56:00 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 14:56:00 symfony [err] {InvalidArgumentException} A field must be an instance of sfWidget.
+Apr 26 14:56:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 26 14:56:01 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:56:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 14:56:01 symfony [info] {sfWebDebugLogger} Configuration 4306.67 ms (10)
+Apr 26 14:56:01 symfony [info] {sfWebDebugLogger} Factories 310.58 ms (1)
+Apr 26 14:56:01 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 122.03 ms (1)
+Apr 26 14:59:25 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 14:59:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 14:59:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 14:59:25 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 14:59:25 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/newSuccess.php"
+Apr 26 14:59:25 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_assets.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_flashes.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_header.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\apps\frontend\modules/preinscripcion/templates/_form_fieldset.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:26 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\symfony-1.4.20\lib\plugins\sfDoctrinePlugin\lib\widget\sfWidgetFormDoctrineChoice.class.php on line 84 (Uninitialized string offset: 1)
+Apr 26 14:59:26 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Apr 26 14:59:26 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p ORDER BY 2  - ()
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion FROM pnfa p - ()
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_footer.php"
+Apr 26 14:59:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_themeswitcher.php"
+Apr 26 14:59:27 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 14:59:27 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 14:59:27 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:59:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 14:59:27 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:59:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Configuration 71.12 ms (12)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Factories 97.81 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 125.29 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion/new" 1761.66 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_assets" 1.86 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_flashes" 7.76 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_header" 2.44 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form" 1550.03 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_actions" 25.27 ms (2)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_fieldset" 1480.74 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_field" 1451.39 ms (27)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 22.05 ms (4)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 5.63 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 2.92 ms (1)
+Apr 26 14:59:27 symfony [info] {sfWebResponse} Send content (331443 o)
+Apr 26 14:59:28 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 14:59:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 14:59:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 14:59:28 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 14:59:28 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/newSuccess.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_assets.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_flashes.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_header.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\apps\frontend\modules/preinscripcion/templates/_form_fieldset.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:28 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\symfony-1.4.20\lib\plugins\sfDoctrinePlugin\lib\widget\sfWidgetFormDoctrineChoice.class.php on line 84 (Uninitialized string offset: 1)
+Apr 26 14:59:28 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Apr 26 14:59:28 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p ORDER BY 2  - ()
+Apr 26 14:59:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:29 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion FROM pnfa p - ()
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_footer.php"
+Apr 26 14:59:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_themeswitcher.php"
+Apr 26 14:59:30 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 14:59:30 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 14:59:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:59:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 14:59:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 14:59:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Configuration 34.54 ms (11)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Factories 79.14 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 100.25 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion/new" 1830.07 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_assets" 3.56 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_flashes" 3.29 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_header" 4.15 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form" 1674.76 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_actions" 8.93 ms (2)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_fieldset" 1649.55 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_field" 1621.42 ms (27)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 12.61 ms (4)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 2.05 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 1.83 ms (1)
+Apr 26 14:59:30 symfony [info] {sfWebResponse} Send content (331410 o)
+Apr 26 15:02:55 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 15:02:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 15:02:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 15:02:55 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 15:04:01 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 15:04:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 15:04:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 15:04:05 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 15:04:05 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/newSuccess.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_assets.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_flashes.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_header.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\apps\frontend\modules/preinscripcion/templates/_form_fieldset.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:05 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\symfony-1.4.20\lib\plugins\sfDoctrinePlugin\lib\widget\sfWidgetFormDoctrineChoice.class.php on line 84 (Uninitialized string offset: 1)
+Apr 26 15:04:05 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Apr 26 15:04:05 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p ORDER BY 2  - ()
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion FROM pnfa p - ()
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_footer.php"
+Apr 26 15:04:06 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_themeswitcher.php"
+Apr 26 15:04:06 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 15:04:06 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 15:04:06 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 15:04:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 15:04:06 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 15:04:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Configuration 4120.36 ms (11)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Factories 261.12 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 62.84 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion/new" 1555.13 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_assets" 1.77 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_flashes" 7.59 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_header" 1.72 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form" 1360.82 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_actions" 22.35 ms (2)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_fieldset" 1297.37 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_field" 1276.67 ms (28)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 15.86 ms (4)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 1.10 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 1.00 ms (1)
+Apr 26 15:04:06 symfony [info] {sfWebResponse} Send content (352291 o)
+Apr 26 15:04:07 symfony [info] {sfPatternRouting} Match route "preinscripcion_new" (/preinscripcion/new.:sf_format) for /preinscripcion/new with parameters array (  'module' => 'preinscripcion',  'action' => 'new',  'sf_format' => 'html',)
+Apr 26 15:04:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 15:04:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 26 15:04:07 symfony [info] {preinscripcionActions} Call "preinscripcionActions->executeNew()"
+Apr 26 15:04:07 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/newSuccess.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_assets.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_flashes.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_header.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\apps\frontend\modules/preinscripcion/templates/_form_fieldset.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:07 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\symfony-1.4.20\lib\plugins\sfDoctrinePlugin\lib\widget\sfWidgetFormDoctrineChoice.class.php on line 84 (Uninitialized string offset: 1)
+Apr 26 15:04:07 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Apr 26 15:04:07 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p ORDER BY 2  - ()
+Apr 26 15:04:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:08 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Apr 26 15:04:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion FROM pnfa p - ()
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_field.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_actions.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_form_footer.php"
+Apr 26 15:04:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\frontend\dev\modules/autoPreinscripcion/templates/_themeswitcher.php"
+Apr 26 15:04:09 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 15:04:09 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\frontend\templates/layout.php"
+Apr 26 15:04:09 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 15:04:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 15:04:09 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Apr 26 15:04:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Configuration 34.42 ms (11)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Factories 97.07 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Action "preinscripcion/new" 97.43 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion/new" 1891.02 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_assets" 3.53 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_flashes" 2.95 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_header" 2.93 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form" 1740.26 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_actions" 11.75 ms (2)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_fieldset" 1710.13 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_field" 1662.28 ms (28)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 17.50 ms (4)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 4.08 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 5.12 ms (1)
+Apr 26 15:04:09 symfony [info] {sfWebResponse} Send content (352250 o)
