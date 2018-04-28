@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [main.css]
 
-  javascripts:    [jquery1.6.js,date_es.js]
+  javascripts:    [control.js,date_es.js]
 
   has_layout:     true
   layout:         layout

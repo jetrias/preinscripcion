@@ -16,4 +16,18 @@ class PreinscripcionTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Preinscripcion');
     }
+    public static function getPre($tipo,$identificacion){
+            $sql = "SELECT a.*,b.descripcion as pais_origen,c.descripcion as estado,d.descripcion as municipio, e.descripcion as parroquia,
+                f.descripcion as pnfa
+                FROM preinscripcion a
+                left join pais_origen b on a.pais_origen_id=b.id
+                left join estado c on a.estado_id=c.id
+                left join municipio d on a.municipio_id=d.id
+                left join parroquia e on a.parroquia_id=e.id
+                left join pnfa f on a.pnfa_id=f.id
+                WHERE nacionalidad='$tipo'
+                AND identificacion='$identificacion'";
+        $q = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($sql);
+        return $q;
+    }
 }

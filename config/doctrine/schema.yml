@@ -522,10 +522,6 @@ Estudiante:
       local: centro_poblado_id
       foreign: id
       type: one
-    EstudioSocioeconomico:
-      local: id
-      foreign: estudiante_id
-      type: many
     Notas:
       local: id
       foreign: estudiante_id
@@ -535,6 +531,10 @@ Estudiante:
       foreign: estudiante_id
       type: many
     Reclamo:
+      local: id
+      foreign: estudiante_id
+      type: many
+    EstudioSocioeconomico:
       local: id
       foreign: estudiante_id
       type: many
@@ -1503,8 +1503,8 @@ Preinscripcion:
       unsigned: false
       notnull: false
       primary: false
-    titulo:
-      type: string()
+    titulo_id:
+      type: integer(4)
       fixed: false
       unsigned: false
       notnull: true
@@ -1594,6 +1594,10 @@ Preinscripcion:
       type: one
     Pnfa:
       local: pnfa_id
+      foreign: id
+      type: one
+    Titulo:
+      local: titulo_id
       foreign: id
       type: one
 ProfesionJefe:
@@ -1894,6 +1898,27 @@ TipoReclamo:
     Reclamo:
       local: id
       foreign: tipo_reclamo_id
+      type: many
+Titulo:
+  connection: doctrine
+  tableName: titulo
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: titulo_id
+    descripcion:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    Preinscripcion:
+      local: id
+      foreign: titulo_id
       type: many
 UnidadCurricular:
   connection: doctrine

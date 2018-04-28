@@ -70,10 +70,10 @@ Doctrine_Manager::getInstance()->bindComponent('Estudiante', 'doctrine');
  * @property Parroquia $Parroquia
  * @property Sexo $Sexo
  * @property CentroPoblado $CentroPoblado
- * @property Doctrine_Collection $EstudioSocioeconomico
  * @property Doctrine_Collection $Notas
  * @property Doctrine_Collection $OtraInformacion
  * @property Doctrine_Collection $Reclamo
+ * @property Doctrine_Collection $EstudioSocioeconomico
  * 
  * @method integer             getId()                    Returns the current record's "id" value
  * @method string              getTipoIdentificacion()    Returns the current record's "tipo_identificacion" value
@@ -138,10 +138,10 @@ Doctrine_Manager::getInstance()->bindComponent('Estudiante', 'doctrine');
  * @method Parroquia           getParroquia()             Returns the current record's "Parroquia" value
  * @method Sexo                getSexo()                  Returns the current record's "Sexo" value
  * @method CentroPoblado       getCentroPoblado()         Returns the current record's "CentroPoblado" value
- * @method Doctrine_Collection getEstudioSocioeconomico() Returns the current record's "EstudioSocioeconomico" collection
  * @method Doctrine_Collection getNotas()                 Returns the current record's "Notas" collection
  * @method Doctrine_Collection getOtraInformacion()       Returns the current record's "OtraInformacion" collection
  * @method Doctrine_Collection getReclamo()               Returns the current record's "Reclamo" collection
+ * @method Doctrine_Collection getEstudioSocioeconomico() Returns the current record's "EstudioSocioeconomico" collection
  * @method Estudiante          setId()                    Sets the current record's "id" value
  * @method Estudiante          setTipoIdentificacion()    Sets the current record's "tipo_identificacion" value
  * @method Estudiante          setIdentificacion()        Sets the current record's "identificacion" value
@@ -205,10 +205,10 @@ Doctrine_Manager::getInstance()->bindComponent('Estudiante', 'doctrine');
  * @method Estudiante          setParroquia()             Sets the current record's "Parroquia" value
  * @method Estudiante          setSexo()                  Sets the current record's "Sexo" value
  * @method Estudiante          setCentroPoblado()         Sets the current record's "CentroPoblado" value
- * @method Estudiante          setEstudioSocioeconomico() Sets the current record's "EstudioSocioeconomico" collection
  * @method Estudiante          setNotas()                 Sets the current record's "Notas" collection
  * @method Estudiante          setOtraInformacion()       Sets the current record's "OtraInformacion" collection
  * @method Estudiante          setReclamo()               Sets the current record's "Reclamo" collection
+ * @method Estudiante          setEstudioSocioeconomico() Sets the current record's "EstudioSocioeconomico" collection
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -685,10 +685,6 @@ abstract class BaseEstudiante extends sfDoctrineRecord
              'local' => 'centro_poblado_id',
              'foreign' => 'id'));
 
-        $this->hasMany('EstudioSocioeconomico', array(
-             'local' => 'id',
-             'foreign' => 'estudiante_id'));
-
         $this->hasMany('Notas', array(
              'local' => 'id',
              'foreign' => 'estudiante_id'));
@@ -698,6 +694,10 @@ abstract class BaseEstudiante extends sfDoctrineRecord
              'foreign' => 'estudiante_id'));
 
         $this->hasMany('Reclamo', array(
+             'local' => 'id',
+             'foreign' => 'estudiante_id'));
+
+        $this->hasMany('EstudioSocioeconomico', array(
              'local' => 'id',
              'foreign' => 'estudiante_id'));
     }

@@ -24,7 +24,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @property string $telefono
  * @property string $correo
  * @property string $twitter
- * @property string $titulo
+ * @property integer $titulo_id
  * @property string $uni_pre
  * @property string $mgi
  * @property string $uni_mgi
@@ -41,6 +41,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @property PaisOrigen $PaisOrigen
  * @property Parroquia $Parroquia
  * @property Pnfa $Pnfa
+ * @property Titulo $Titulo
  * 
  * @method integer        getId()                   Returns the current record's "id" value
  * @method string         getNacionalidad()         Returns the current record's "nacionalidad" value
@@ -59,7 +60,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @method string         getTelefono()             Returns the current record's "telefono" value
  * @method string         getCorreo()               Returns the current record's "correo" value
  * @method string         getTwitter()              Returns the current record's "twitter" value
- * @method string         getTitulo()               Returns the current record's "titulo" value
+ * @method integer        getTituloId()             Returns the current record's "titulo_id" value
  * @method string         getUniPre()               Returns the current record's "uni_pre" value
  * @method string         getMgi()                  Returns the current record's "mgi" value
  * @method string         getUniMgi()               Returns the current record's "uni_mgi" value
@@ -76,6 +77,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @method PaisOrigen     getPaisOrigen()           Returns the current record's "PaisOrigen" value
  * @method Parroquia      getParroquia()            Returns the current record's "Parroquia" value
  * @method Pnfa           getPnfa()                 Returns the current record's "Pnfa" value
+ * @method Titulo         getTitulo()               Returns the current record's "Titulo" value
  * @method Preinscripcion setId()                   Sets the current record's "id" value
  * @method Preinscripcion setNacionalidad()         Sets the current record's "nacionalidad" value
  * @method Preinscripcion setIdentificacion()       Sets the current record's "identificacion" value
@@ -93,7 +95,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @method Preinscripcion setTelefono()             Sets the current record's "telefono" value
  * @method Preinscripcion setCorreo()               Sets the current record's "correo" value
  * @method Preinscripcion setTwitter()              Sets the current record's "twitter" value
- * @method Preinscripcion setTitulo()               Sets the current record's "titulo" value
+ * @method Preinscripcion setTituloId()             Sets the current record's "titulo_id" value
  * @method Preinscripcion setUniPre()               Sets the current record's "uni_pre" value
  * @method Preinscripcion setMgi()                  Sets the current record's "mgi" value
  * @method Preinscripcion setUniMgi()               Sets the current record's "uni_mgi" value
@@ -110,6 +112,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @method Preinscripcion setPaisOrigen()           Sets the current record's "PaisOrigen" value
  * @method Preinscripcion setParroquia()            Sets the current record's "Parroquia" value
  * @method Preinscripcion setPnfa()                 Sets the current record's "Pnfa" value
+ * @method Preinscripcion setTitulo()               Sets the current record's "Titulo" value
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -257,13 +260,13 @@ abstract class BasePreinscripcion extends sfDoctrineRecord
              'primary' => false,
              'length' => '',
              ));
-        $this->hasColumn('titulo', 'string', null, array(
-             'type' => 'string',
+        $this->hasColumn('titulo_id', 'integer', 4, array(
+             'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'notnull' => true,
              'primary' => false,
-             'length' => '',
+             'length' => 4,
              ));
         $this->hasColumn('uni_pre', 'string', null, array(
              'type' => 'string',
@@ -376,6 +379,10 @@ abstract class BasePreinscripcion extends sfDoctrineRecord
 
         $this->hasOne('Pnfa', array(
              'local' => 'pnfa_id',
+             'foreign' => 'id'));
+
+        $this->hasOne('Titulo', array(
+             'local' => 'titulo_id',
              'foreign' => 'id'));
     }
 }

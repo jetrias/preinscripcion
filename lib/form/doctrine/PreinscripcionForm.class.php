@@ -31,7 +31,7 @@ class PreinscripcionForm extends BasePreinscripcionForm
       $this->widgetSchema['ano_otra'] = new sfWidgetFormInput(array(), array('placeHolder' => ''));
       $this->widgetSchema['ano_pre'] = new sfWidgetFormInput(array(), array('placeHolder' => ''));
       $this->widgetSchema['ano_mgi'] = new sfWidgetFormInput(array(), array('placeHolder' => ''));
-      $this->widgetSchema['titulo'] = new sfWidgetFormInput(array(), array('placeHolder' => ''));
+     
       $this->widgetSchema['mgi'] = new sfWidgetFormChoice(array(
             'choices' => array('' => 'Seleccione',
                 "SI" => "SI", "NO" => "NO")));
@@ -57,13 +57,14 @@ class PreinscripcionForm extends BasePreinscripcionForm
             'model' => 'Municipio',
             'depends' => 'Estado',
             'add_empty' => 'Seleccione municipio',
-            'ajax' => true,
+//            'ajax' => true,
         ));
         $this->widgetSchema['parroquia_id'] = new sfWidgetFormDoctrineDependentSelect(array(
             'model' => 'Parroquia',
             'depends' => 'Municipio',
             'add_empty' => 'Seleccione parroquia',
-            'ajax' => true,));
+//            'ajax' => true,
+            ));
         $this->widgetSchema->moveField('pnfa_id', 'after', 'twitter');
         $this->widgetSchema->moveField('art_8', 'after', 'pnfa_id');
         $this->widgetSchema->moveField('ano_pre', 'after', 'uni_pre');

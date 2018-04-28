@@ -6,7 +6,7 @@
     <div class="ui-corner-all ui-tabs-panel ui-widget-content ui-corner-bottom">
         <br/>
         <br/>
-        <form method="POST" action="/preinscripcion/web/index.php/buscar/buscar" name="buscarForm" id="buscarForm" onSubmit="return enviar()" autocomplete="off">
+        <form method="POST" action="/preinscripcion/web/index.php/preinscripcion/buscar" name="buscarForm" id="buscarForm" onSubmit="return enviar()" autocomplete="off">
             <center>
                 <table>
                     <tr>

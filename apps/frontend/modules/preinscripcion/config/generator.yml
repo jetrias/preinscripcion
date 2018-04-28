@@ -22,7 +22,7 @@ generator:
           genero: {label: Género}
           direccion: {label: Dirección}
           fnac: {label: Fecha de nacimiento}
-          titulo: {label: Título de pregrado}
+          titulo_id: {label: Título de pregrado}
           pais_origen_id: {label: País Origen}
           telefono: {label: Teléfono}
           mgi: {label: Realizó la especialización en MGI?}
