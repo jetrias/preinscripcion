@@ -1549,7 +1549,7 @@ Preinscripcion:
       type: integer(4)
       fixed: false
       unsigned: false
-      notnull: false
+      notnull: true
       primary: false
     otra_especializacion:
       type: string()

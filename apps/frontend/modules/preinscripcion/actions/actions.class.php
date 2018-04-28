@@ -52,4 +52,12 @@ protected function processForm(sfWebRequest $request, sfForm $form)
       $this->getUser()->setFlash('error', 'The item has not been saved due to some errors.', false);
     }
   }
+  public function executeBuscar(sfWebRequest $request){
+      $this->buscar = $this->getRequestParameter('buscar');
+      $this->cedula = $this->getRequestParameter('cedula');
+      if($this->buscar=='BUSCAR'){
+          $result=PreinscripcionTable::getPre($this->cedula);
+      }
+      
+  }
 }

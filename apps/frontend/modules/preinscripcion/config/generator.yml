@@ -14,7 +14,7 @@ generator:
     config:
       actions: ~
       fields:  
-          identificacion: {label: Identificación}
+          identificacion: {label: Número de Identificación}
           pnombre: {label: Primer Nombre}
           snombre: {label: Segundo Nombre}
           papellido: {label: Primer apellido}
@@ -22,16 +22,16 @@ generator:
           genero: {label: Género}
           direccion: {label: Dirección}
           fnac: {label: Fecha de nacimiento}
-          titulo: {label: Título}
+          titulo: {label: Título de pregrado}
           pais_origen_id: {label: País Origen}
           telefono: {label: Teléfono}
           mgi: {label: Realizó la especialización en MGI?}
           otra: {label: Realizó otra especialización?}
-          uni_mgi: {label: Indique el nombre de la universidad donde cursó el MGI.}
-          uni_pre: {label: Indique el nombre de la universidad donde cursó el Pregrado.}
+          uni_mgi: {label: Indique el nombre de la universidad que acreditó el MGI.}
+          uni_pre: {label: Indique el nombre de la universidad que acreditó el Pregrado.}
           uni_otra: {label: Indique la especialidad y el nombre de la universidad donde cursó el Postgrado}
           art_8: {label: Cumplió con el artículo 8?}
-          pnfa_id: {label: Seleccione el PNFA que aspira}
+          pnfa_id: {label: Seleccione el PNFA que aspira cursar}
           ano_pre: {label: Indique el año de egreso de pregrado}
           ano_mgi: {label: Indique el año de egreso de MGI}
           ano_otra: {label: Indique el año de egreso de la epecialización}
@@ -40,6 +40,6 @@ generator:
       form:    ~
       edit:    ~
       new:     
-          title: Preinscripcion
+          title: Matrícula de Aspirantes
           actions:
                _save:

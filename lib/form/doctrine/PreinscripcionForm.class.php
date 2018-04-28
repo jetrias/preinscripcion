@@ -89,5 +89,15 @@ class PreinscripcionForm extends BasePreinscripcionForm
             'date_widget' => new sfWidgetFormDate(array('format' => '%day% %month% %year%',
                 'years' => array_combine($years, $years),))));
         //$this->widgetSchema['fecha'] = new sfWidgetFormJQueryDate(array('culture' => 'es'));
+//        $this->validatorSchema['telefono'] = new sfValidatorAnd(array(
+////        new sfValidatorInteger(
+////            array('min'=> 00000000000,'max' => 99999999999),
+////            array('min' => 'Debe contener 11 digitos', 'max' => 'Debe contener 11 digitos')
+////        ),
+//        new sfValidatorRegex(
+//            array('pattern' => '[0-9]'),
+//            array('invalid' => 'Solo debe colocar Numeros y Debe contener 11 digitos')
+//        ),
+//    ), array(), array('required' => 'Por favor coloque su telefono.'));
   }
 }
