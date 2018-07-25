@@ -14,24 +14,30 @@ Doctrine_Manager::getInstance()->bindComponent('Parroquia', 'doctrine');
  * @property integer $municipio_codigo
  * @property integer $parroquia_codigo
  * @property Doctrine_Collection $Estudiante
+ * @property Doctrine_Collection $Estudiante_15
  * @property Doctrine_Collection $Preinscripcion
+ * @property Doctrine_Collection $PreinscripcionCurso
  * 
- * @method integer             getId()               Returns the current record's "id" value
- * @method string              getDescripcion()      Returns the current record's "descripcion" value
- * @method integer             getMunicipioId()      Returns the current record's "municipio_id" value
- * @method integer             getEstadoCodigo()     Returns the current record's "estado_codigo" value
- * @method integer             getMunicipioCodigo()  Returns the current record's "municipio_codigo" value
- * @method integer             getParroquiaCodigo()  Returns the current record's "parroquia_codigo" value
- * @method Doctrine_Collection getEstudiante()       Returns the current record's "Estudiante" collection
- * @method Doctrine_Collection getPreinscripcion()   Returns the current record's "Preinscripcion" collection
- * @method Parroquia           setId()               Sets the current record's "id" value
- * @method Parroquia           setDescripcion()      Sets the current record's "descripcion" value
- * @method Parroquia           setMunicipioId()      Sets the current record's "municipio_id" value
- * @method Parroquia           setEstadoCodigo()     Sets the current record's "estado_codigo" value
- * @method Parroquia           setMunicipioCodigo()  Sets the current record's "municipio_codigo" value
- * @method Parroquia           setParroquiaCodigo()  Sets the current record's "parroquia_codigo" value
- * @method Parroquia           setEstudiante()       Sets the current record's "Estudiante" collection
- * @method Parroquia           setPreinscripcion()   Sets the current record's "Preinscripcion" collection
+ * @method integer             getId()                  Returns the current record's "id" value
+ * @method string              getDescripcion()         Returns the current record's "descripcion" value
+ * @method integer             getMunicipioId()         Returns the current record's "municipio_id" value
+ * @method integer             getEstadoCodigo()        Returns the current record's "estado_codigo" value
+ * @method integer             getMunicipioCodigo()     Returns the current record's "municipio_codigo" value
+ * @method integer             getParroquiaCodigo()     Returns the current record's "parroquia_codigo" value
+ * @method Doctrine_Collection getEstudiante()          Returns the current record's "Estudiante" collection
+ * @method Doctrine_Collection getEstudiante15()        Returns the current record's "Estudiante_15" collection
+ * @method Doctrine_Collection getPreinscripcion()      Returns the current record's "Preinscripcion" collection
+ * @method Doctrine_Collection getPreinscripcionCurso() Returns the current record's "PreinscripcionCurso" collection
+ * @method Parroquia           setId()                  Sets the current record's "id" value
+ * @method Parroquia           setDescripcion()         Sets the current record's "descripcion" value
+ * @method Parroquia           setMunicipioId()         Sets the current record's "municipio_id" value
+ * @method Parroquia           setEstadoCodigo()        Sets the current record's "estado_codigo" value
+ * @method Parroquia           setMunicipioCodigo()     Sets the current record's "municipio_codigo" value
+ * @method Parroquia           setParroquiaCodigo()     Sets the current record's "parroquia_codigo" value
+ * @method Parroquia           setEstudiante()          Sets the current record's "Estudiante" collection
+ * @method Parroquia           setEstudiante15()        Sets the current record's "Estudiante_15" collection
+ * @method Parroquia           setPreinscripcion()      Sets the current record's "Preinscripcion" collection
+ * @method Parroquia           setPreinscripcionCurso() Sets the current record's "PreinscripcionCurso" collection
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -100,7 +106,15 @@ abstract class BaseParroquia extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'parroquia_id'));
 
+        $this->hasMany('Estudiante as Estudiante_15', array(
+             'local' => 'id',
+             'foreign' => 'asic_parroquia_id'));
+
         $this->hasMany('Preinscripcion', array(
+             'local' => 'id',
+             'foreign' => 'parroquia_id'));
+
+        $this->hasMany('PreinscripcionCurso', array(
              'local' => 'id',
              'foreign' => 'parroquia_id'));
     }

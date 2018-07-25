@@ -16,4 +16,12 @@ class PnfTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Pnf');
     }
+       public function getPnf() {
+        //$id = sfContext::getInstance()->getUser()->getAttribute('estudiante_id');
+        $q = Doctrine_Query::create()
+                ->from('pnf p')
+                ->addWhere("p.tipo_pnf='PF'")
+                ->addOrderBy('id', 'ASC');
+        return $q;
+    }
 }

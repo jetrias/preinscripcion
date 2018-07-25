@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           preinscripcionCurso
+    theme:                 jroller
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          preinscripcion_curso
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          nacionalidad: {label: Documento de Identidad}
+          identificacion: {label: Número de Documento de Identidad}
+          pnombre: {label: Primer Nombre}
+          snombre: {label: Segundo Nombre}
+          papellido: {label: Primer Apellido}
+          sapellido: {label: Segundo Apellido}
+          genero: {label: Género}
+          fnac: {label: Fecha de Nacimiento}
+          direccion: {label: Dirección}
+          telefono: {label: Teléfono Personal}
+          tlf_casa: {label: Teléfono de casa}
+          tlf_contacto: {label: Teléfono de contacto}
+          pnf: {label: Programa Nacional de Formación}
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     
+          title: Preinscripción
+          actions:
+               _save:

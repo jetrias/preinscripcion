@@ -13,15 +13,17 @@ require_once dirname(__FILE__).'/../lib/preinscripcionGeneratorHelper.class.php'
  */
 class preinscripcionActions extends autoPreinscripcionActions
 {
+     private $home='/preinscripcion/web/index.php/preinscripcion/buscar';
      public function executeIndex(sfWebRequest $request){
+         
          $this->getUser()->setFlash('error', sprintf('Se ha detectado una acción inválida en el sistema!'));
         
-         $this->redirect('@preinscripcion_new');
+         $this->redirect($this->home);
      }
       public function executeEdit(sfWebRequest $request)
   {
     $this->getUser()->setFlash('error', sprintf('Se ha detectado una acción inválida en el sistema!'));
-    $this->redirect('@preinscripcion_new');
+    $this->redirect($this->home);
   }
 protected function processForm(sfWebRequest $request, sfForm $form)
   {

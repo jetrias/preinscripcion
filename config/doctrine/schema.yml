@@ -37,6 +37,20 @@ Asic:
       local: id
       foreign: asic_id
       type: many
+    Estudiante_16:
+      class: Estudiante
+      local: id
+      foreign: asic_hab_id
+      type: many
+    Traslado:
+      local: id
+      foreign: asic_emisor_id
+      type: many
+    Traslado_7:
+      class: Traslado
+      local: id
+      foreign: asic_receptor_id
+      type: many
 CentroPoblado:
   connection: doctrine
   tableName: centro_poblado
@@ -86,6 +100,43 @@ CentroPoblado:
     Estudiante:
       local: id
       foreign: centro_poblado_id
+      type: many
+CodigoTlf:
+  connection: doctrine
+  tableName: codigo_tlf
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: codigo_tlf_id
+    codigo:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    tipo:
+      type: string(1)
+      fixed: true
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    Estudiante:
+      local: id
+      foreign: codigo_tlf_id
+      type: many
+    Estudiante_13:
+      class: Estudiante
+      local: id
+      foreign: codigo_tlf_casa_id
+      type: many
+    Estudiante_14:
+      class: Estudiante
+      local: id
+      foreign: codigo_tlf_contacto
       type: many
 CondicionVivienda:
   connection: doctrine
@@ -137,6 +188,19 @@ Estado:
     Preinscripcion:
       local: id
       foreign: estado_id
+      type: many
+    PreinscripcionCurso:
+      local: id
+      foreign: estado_id
+      type: many
+    Traslado:
+      local: id
+      foreign: estado_emisor_id
+      type: many
+    Traslado_3:
+      class: Traslado
+      local: id
+      foreign: estado_receptor_id
       type: many
 EstadoCivil:
   connection: doctrine
@@ -475,6 +539,96 @@ Estudiante:
       unsigned: false
       notnull: false
       primary: false
+    codigo_tlf_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    codigo_tlf_casa_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    parentesco:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    codigo_tlf_contacto:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    telefono_contacto:
+      type: decimal(18)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    situacion_academica:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    carnet_patria:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    serial_carnet_patria:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    afrodescendiente:
+      type: boolean(1)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    lgbt:
+      type: boolean(1)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    dedicacion_laboral:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    asic_parroquia_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    asic_hab_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    mod_ingreso_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    convocatoria:
+      type: boolean(1)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
   relations:
     Estado:
       local: asic_estado_id
@@ -522,19 +676,51 @@ Estudiante:
       local: centro_poblado_id
       foreign: id
       type: one
+    CodigoTlf:
+      local: codigo_tlf_id
+      foreign: id
+      type: one
+    CodigoTlf_13:
+      class: CodigoTlf
+      local: codigo_tlf_casa_id
+      foreign: id
+      type: one
+    CodigoTlf_14:
+      class: CodigoTlf
+      local: codigo_tlf_contacto
+      foreign: id
+      type: one
+    Parroquia_15:
+      class: Parroquia
+      local: asic_parroquia_id
+      foreign: id
+      type: one
+    Asic_16:
+      class: Asic
+      local: asic_hab_id
+      foreign: id
+      type: one
+    ModalidadIngreso:
+      local: mod_ingreso_id
+      foreign: id
+      type: one
+    Reclamo:
+      local: id
+      foreign: estudiante_id
+      type: many
+    Traslado:
+      local: id
+      foreign: estudiante_id
+      type: many
+    EstudioSocioeconomico:
+      local: id
+      foreign: estudiante_id
+      type: many
     Notas:
       local: id
       foreign: estudiante_id
       type: many
     OtraInformacion:
-      local: id
-      foreign: estudiante_id
-      type: many
-    Reclamo:
-      local: id
-      foreign: estudiante_id
-      type: many
-    EstudioSocioeconomico:
       local: id
       foreign: estudiante_id
       type: many
@@ -944,6 +1130,27 @@ MaterialTecho:
       local: id
       foreign: material_techo_id
       type: many
+ModalidadIngreso:
+  connection: doctrine
+  tableName: modalidad_ingreso
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: modalidad_ingreso_id
+    descripcion:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    Estudiante:
+      local: id
+      foreign: mod_ingreso_id
+      type: many
 Municipio:
   connection: doctrine
   tableName: municipio
@@ -985,6 +1192,19 @@ Municipio:
     Preinscripcion:
       local: id
       foreign: municipio_id
+      type: many
+    PreinscripcionCurso:
+      local: id
+      foreign: municipio_id
+      type: many
+    Traslado:
+      local: id
+      foreign: municipio_emisor_id
+      type: many
+    Traslado_5:
+      class: Traslado
+      local: id
+      foreign: municipio_receptor_id
       type: many
 Notas:
   connection: doctrine
@@ -1256,6 +1476,10 @@ PaisOrigen:
       local: id
       foreign: pais_origen_id
       type: many
+    PreinscripcionCurso:
+      local: id
+      foreign: pais_origen_id
+      type: many
 Parroquia:
   connection: doctrine
   tableName: parroquia
@@ -1301,7 +1525,16 @@ Parroquia:
       local: id
       foreign: parroquia_id
       type: many
+    Estudiante_15:
+      class: Estudiante
+      local: id
+      foreign: asic_parroquia_id
+      type: many
     Preinscripcion:
+      local: id
+      foreign: parroquia_id
+      type: many
+    PreinscripcionCurso:
       local: id
       foreign: parroquia_id
       type: many
@@ -1361,12 +1594,22 @@ Pnf:
       unsigned: false
       notnull: false
       primary: false
+    tipo_pnf:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
   relations:
-    Notas:
+    UnidadCurricular:
       local: id
       foreign: pnf_id
       type: many
-    UnidadCurricular:
+    PreinscripcionCurso:
+      local: id
+      foreign: pnf_id
+      type: many
+    Notas:
       local: id
       foreign: pnf_id
       type: many
@@ -1598,6 +1841,163 @@ Preinscripcion:
       type: one
     Titulo:
       local: titulo_id
+      foreign: id
+      type: one
+PreinscripcionCurso:
+  connection: doctrine
+  tableName: preinscripcion_curso
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: preinscripcion_curso_id
+    nacionalidad:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    identificacion:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    pnombre:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    snombre:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    papellido:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    sapellido:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    genero:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    fnac:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pais_origen_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    estado_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    municipio_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    parroquia_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    direccion:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    telefono:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    tlf_casa:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    tlf_contacto:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    correo:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    twitter:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    seleccionado:
+      type: boolean(1)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    transferido:
+      type: boolean(1)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pnf_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    Estado:
+      local: estado_id
+      foreign: id
+      type: one
+    Municipio:
+      local: municipio_id
+      foreign: id
+      type: one
+    PaisOrigen:
+      local: pais_origen_id
+      foreign: id
+      type: one
+    Parroquia:
+      local: parroquia_id
+      foreign: id
+      type: one
+    Pnf:
+      local: pnf_id
       foreign: id
       type: one
 ProfesionJefe:
@@ -1920,6 +2320,120 @@ Titulo:
       local: id
       foreign: titulo_id
       type: many
+Traslado:
+  connection: doctrine
+  tableName: traslado
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: traslado_id
+    estudiante_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    estado_emisor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    municipio_emisor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    asic_emisor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    estado_receptor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    municipio_receptor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    asic_receptor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    fecha_emision:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    fecha_recepcion:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    tipo_traslado:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    estatus_expediente:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    observacion:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    Estado:
+      local: estado_emisor_id
+      foreign: id
+      type: one
+    Estudiante:
+      local: estudiante_id
+      foreign: id
+      type: one
+    Estado_3:
+      class: Estado
+      local: estado_receptor_id
+      foreign: id
+      type: one
+    Municipio:
+      local: municipio_emisor_id
+      foreign: id
+      type: one
+    Municipio_5:
+      class: Municipio
+      local: municipio_receptor_id
+      foreign: id
+      type: one
+    Asic:
+      local: asic_emisor_id
+      foreign: id
+      type: one
+    Asic_7:
+      class: Asic
+      local: asic_receptor_id
+      foreign: id
+      type: one
 UnidadCurricular:
   connection: doctrine
   tableName: unidad_curricular
