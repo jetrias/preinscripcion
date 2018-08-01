@@ -13,7 +13,7 @@ require_once dirname(__FILE__).'/../lib/preinscripcion_cursoGeneratorHelper.clas
  */
 class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions
 {
-    private $home='/preinscripcion/web/index.php/preinscripcion_curso/buscar';
+    private $home='/pre/index.php/preinscripcion_curso/buscar';
      public function executeIndex(sfWebRequest $request){
          
          $this->getUser()->setFlash('error', sprintf('Se ha detectado una acción inválida en el sistema!'));
@@ -41,7 +41,7 @@ protected function processForm(sfWebRequest $request, sfForm $form)
       else
       {
         $this->getUser()->setFlash('notice', $notice);
-        $this->redirect('/preinscripcion/web/index.php/preinscripcion_curso/planilla?tip='. $this->form->getValue('nacionalidad').'&ide='.$nombre = $this->form->getValue('identificacion').'');
+        $this->redirect('/pre/index.php/preinscripcion_curso/planilla?tip='. $this->form->getValue('nacionalidad').'&ide='.$nombre = $this->form->getValue('identificacion').'');
         //$this->redirect(array('sf_route' => 'preinscripcion_edit', 'sf_subject' => $preinscripcion));
       }
     }
@@ -58,9 +58,9 @@ protected function processForm(sfWebRequest $request, sfForm $form)
          // echo $this->identificacion.'-'.$this->tipoIdentificacion;exit();
           $result=  PreinscripcionCursoTable::getPre($this->tipoIdentificacion,$this->identificacion);
           if($result[0]['id']!=''){
-              $this->redirect('/preinscripcion/web/index.php/preinscripcion_curso/planilla?tip='.$this->tipoIdentificacion.'&ide='.$this->identificacion.'');
+              $this->redirect('/pre/index.php/preinscripcion_curso/planilla?tip='.$this->tipoIdentificacion.'&ide='.$this->identificacion.'');
           }else{
-              $this->redirect('/preinscripcion/web/index.php/preinscripcion_curso/new');
+              $this->redirect('/pre/index.php/preinscripcion_curso/new');
           }
       }
       
@@ -70,7 +70,6 @@ protected function processForm(sfWebRequest $request, sfForm $form)
         $data=PreinscripcionCursoTable::getPre($this->getRequestParameter('tip'),$this->getRequestParameter('ide'));
         $edad = $this->edad($data[0]['fnac']);
         $fecha2 = date("d-m-Y", strtotime($data[0]['fnac']));
-
         if ($data[0]['tipo_identificacion'] == 'V') {
             $tipo_identificacion = 'CÉDULA';
         }
