@@ -119,7 +119,7 @@ protected function processForm(sfWebRequest $request, sfForm $form)
     }
 </style>
 <table border="1px;" width="100%"cellpadding="5" cellspacing="2" class="clase">
-    <tr><td align="center" colspan="3"><img src="http://www.ucs.gob.ve/cintillo/cintillo.jpg"/></td></tr>
+    <tr><td align="center" colspan="3"></td></tr>
     <tr><td colspan="2" width="80%" align="center"><br><br><br><br>REPÚBLICA BOLIVARIANA DE VENEZUELA<br>
             UNIVERSIDAD DE LAS CIENCIAS DE LA SALUD "HUGO CHÁVEZ FRÍAS"<br>
             <b>PLANILLA DE PREINSCRIPCIÓN ASPIRANTES PNF 2018</b><br><br><br>    
@@ -141,7 +141,7 @@ protected function processForm(sfWebRequest $request, sfForm $form)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="12">cortar por esta línea</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del><br><br><br>
 <table border="1px;" width="100%"cellpadding="5" cellspacing="2" class="clase">
-    <tr><td align="center" colspan="3"><img src="http://www.ucs.gob.ve/cintillo/cintillo.jpg"/></td></tr>
+    <tr><td align="center" colspan="3"></td></tr>
     <tr><td colspan="2" width="80%" align="center"><br><br><br><br>REPÚBLICA BOLIVARIANA DE VENEZUELA<br>
             UNIVERSIDAD DE LAS CIENCIAS DE LA SALUD "HUGO CHÁVEZ FRÍAS"<br>
             <b>PLANILLA DE PREINSCRIPCIÓN ASPIRANTES PNF 2018</b><br><br><br>    
