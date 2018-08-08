@@ -1977,7 +1977,7 @@ PreinscripcionCurso:
       type: integer(4)
       fixed: false
       unsigned: false
-      notnull: false
+      notnull: true
       primary: false
   relations:
     Estado:

@@ -47,10 +47,13 @@
         <table class="customers">
             <tr><th>PROGRAMA NACIONAL DE FORMACIÓN (PNF)</th><th>Total</th></tr> 
             <?php
+            $total=0;
             foreach ($pnf as $data):
                 echo '<tr><td>'.$data['descripcion'] . '</td><td>' . $data['total'].'</td></tr>';
+            $total=$total+$data['total'];
             endforeach;
             ?>
+            <tr><td><strong>TOTAL</strong></td><td><strong><?php echo $total;?></strong></td></tr>
         </table>
         </p>
     </div></div>
