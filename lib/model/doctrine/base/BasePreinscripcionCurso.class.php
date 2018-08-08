@@ -272,7 +272,7 @@ abstract class BasePreinscripcionCurso extends sfDoctrineRecord
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
-             'notnull' => false,
+             'notnull' => true,
              'primary' => false,
              'length' => 4,
              ));
