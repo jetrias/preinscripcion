@@ -2643,3 +2643,31 @@ Usuario:
       unsigned: false
       notnull: false
       primary: false
+Usuarios2:
+  connection: doctrine
+  tableName: usuarios2
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: usuarios2_id
+    identificacion:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    usuario:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    clave:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false

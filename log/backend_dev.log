@@ -1,0 +1,856 @@
+Aug 03 11:07:07 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:07:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:07:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:07:10 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:07:10 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:07:10 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:07:10 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:10 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p - ()
+Aug 03 11:07:11 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:11 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 03 11:07:11 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:11 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT m.id AS m__id, m.descripcion AS m__descripcion, m.estado_id AS m__estado_id, m.municipio_codigo AS m__municipio_codigo FROM municipio m - ()
+Aug 03 11:07:12 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:12 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.municipio_id AS p__municipio_id, p.estado_codigo AS p__estado_codigo, p.municipio_codigo AS p__municipio_codigo, p.parroquia_codigo AS p__parroquia_codigo FROM parroquia p - ()
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:14 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p - ()
+Aug 03 11:07:15 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_actions.php"
+Aug 03 11:07:15 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list.php"
+Aug 03 11:07:15 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_th_tabular.php"
+Aug 03 11:07:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:15 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_pagination.php"
+Aug 03 11:07:15 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.nacionalidad AS p__nacionalidad, p.identificacion AS p__identificacion, p.pnombre AS p__pnombre, p.snombre AS p__snombre, p.papellido AS p__papellido, p.sapellido AS p__sapellido, p.genero AS p__genero, p.fnac AS p__fnac, p.pais_origen_id AS p__pais_origen_id, p.estado_id AS p__estado_id, p.municipio_id AS p__municipio_id, p.parroquia_id AS p__parroquia_id, p.direccion AS p__direccion, p.telefono AS p__telefono, p.tlf_casa AS p__tlf_casa, p.tlf_contacto AS p__tlf_contacto, p.correo AS p__correo, p.twitter AS p__twitter, p.seleccionado AS p__seleccionado, p.transferido AS p__transferido, p.pnf_id AS p__pnf_id FROM preinscripcion_curso p LIMIT 20 - ()
+Aug 03 11:07:15 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_batch_actions.php"
+Aug 03 11:07:15 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 03 11:07:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:07:15 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "primer_nombre" on "PreinscripcionCurso"
+Aug 03 11:07:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:07:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:07:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 03 11:07:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:07:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Configuration 3487.51 ms (11)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Factories 381.49 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 47.65 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 9.16 ms (8)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 5588.98 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.00 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 0.94 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 0.73 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 4246.27 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 4226.54 ms (21)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_actions" 1.96 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list" 816.35 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_th_tabular" 4.77 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_pagination" 2.66 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_batch_actions" 1.01 ms (1)
+Aug 03 11:07:15 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_tabular" 796.96 ms (1)
+Aug 03 11:07:37 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:07:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:07:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:07:40 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:07:40 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:07:40 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:07:41 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.iso AS p__iso FROM pais_origen p - ()
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 03 11:07:41 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:41 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT m.id AS m__id, m.descripcion AS m__descripcion, m.estado_id AS m__estado_id, m.municipio_codigo AS m__municipio_codigo FROM municipio m - ()
+Aug 03 11:07:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:42 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.descripcion AS p__descripcion, p.municipio_id AS p__municipio_id, p.estado_codigo AS p__estado_codigo, p.municipio_codigo AS p__municipio_codigo, p.parroquia_codigo AS p__parroquia_codigo FROM parroquia p - ()
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:07:45 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p - ()
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_actions.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_th_tabular.php"
+Aug 03 11:07:45 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_pagination.php"
+Aug 03 11:07:45 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.nacionalidad AS p__nacionalidad, p.identificacion AS p__identificacion, p.pnombre AS p__pnombre, p.snombre AS p__snombre, p.papellido AS p__papellido, p.sapellido AS p__sapellido, p.genero AS p__genero, p.fnac AS p__fnac, p.pais_origen_id AS p__pais_origen_id, p.estado_id AS p__estado_id, p.municipio_id AS p__municipio_id, p.parroquia_id AS p__parroquia_id, p.direccion AS p__direccion, p.telefono AS p__telefono, p.tlf_casa AS p__tlf_casa, p.tlf_contacto AS p__tlf_contacto, p.correo AS p__correo, p.twitter AS p__twitter, p.seleccionado AS p__seleccionado, p.transferido AS p__transferido, p.pnf_id AS p__pnf_id FROM preinscripcion_curso p LIMIT 20 - ()
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_batch_actions.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 03 11:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (24)
+Aug 03 11:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_actions.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_batch_actions.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 03 11:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (9)
+Aug 03 11:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_actions.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_batch_actions.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_footer.php"
+Aug 03 11:07:45 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_themeswitcher.php"
+Aug 03 11:07:45 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 03 11:07:45 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 03 11:07:45 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:07:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 03 11:07:45 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:07:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Configuration 2906.76 ms (12)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Factories 30.76 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 48.50 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 23.56 ms (12)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 5200.08 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.17 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.53 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 1.05 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 4267.98 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 4247.26 ms (21)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_actions" 1.39 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list" 405.12 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_th_tabular" 3.34 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_pagination" 1.30 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_batch_actions" 2.28 ms (2)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_tabular" 381.79 ms (2)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_actions" 5.85 ms (2)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_batch_actions" 1.57 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_footer" 1.16 ms (1)
+Aug 03 11:07:45 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_themeswitcher" 0.91 ms (1)
+Aug 03 11:07:46 symfony [info] {sfWebResponse} Send content (504675 o)
+Aug 03 11:12:23 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:12:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:12:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:12:26 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:12:26 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:12:26 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:12:27 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:27 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:12:27 symfony [err] {InvalidArgumentException} Widget "estado" does not exist.
+Aug 03 11:12:27 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:12:27 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:12:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 03 11:12:27 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:12:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Configuration 3619.70 ms (11)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Factories 136.91 ms (1)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 45.06 ms (1)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.22 ms (2)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 851.06 ms (1)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.49 ms (1)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.27 ms (1)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 1.16 ms (1)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 293.56 ms (1)
+Aug 03 11:12:27 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 6.19 ms (4)
+Aug 03 11:12:54 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:12:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:12:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:12:57 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:12:57 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:12:57 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:12:58 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:58 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:12:58 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:12:58 symfony [err] {InvalidArgumentException} Widget "estado" does not exist.
+Aug 03 11:12:58 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:12:58 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:12:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 03 11:12:58 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:12:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Configuration 2936.86 ms (12)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Factories 26.63 ms (1)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 48.03 ms (1)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.66 ms (2)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 839.85 ms (1)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.86 ms (1)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.16 ms (1)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 1.11 ms (1)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 310.85 ms (1)
+Aug 03 11:12:58 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 9.83 ms (4)
+Aug 03 11:13:16 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:13:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:13:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:13:19 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:13:19 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:13:19 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:13:20 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:20 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:20 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:13:20 symfony [err] {InvalidArgumentException} Widget "estado" does not exist.
+Aug 03 11:13:20 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:13:20 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:13:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 03 11:13:20 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:13:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Configuration 3386.72 ms (11)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Factories 135.73 ms (1)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 45.57 ms (1)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.14 ms (2)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 825.67 ms (1)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.60 ms (1)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.37 ms (1)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 0.74 ms (1)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 295.53 ms (1)
+Aug 03 11:13:20 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 7.64 ms (4)
+Aug 03 11:13:41 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:13:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:13:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:13:42 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:13:42 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:13:42 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:13:42 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:42 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:13:42 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:13:42 symfony [err] {InvalidArgumentException} Widget "estado" does not exist.
+Aug 03 11:13:42 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:13:43 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:13:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 03 11:13:43 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:13:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Configuration 1181.95 ms (12)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Factories 26.48 ms (1)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 49.74 ms (1)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.71 ms (2)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 820.04 ms (1)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.26 ms (1)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.75 ms (1)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 2.02 ms (1)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 297.48 ms (1)
+Aug 03 11:13:43 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 6.95 ms (4)
+Aug 03 11:17:13 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:17:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:17:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:17:13 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:17:13 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:17:13 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:17:14 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:14 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:14 symfony [err] {InvalidArgumentException} Widget "estado" does not exist.
+Aug 03 11:17:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 03 11:17:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Configuration 289.39 ms (12)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Factories 31.16 ms (1)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 49.42 ms (1)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.40 ms (2)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 821.70 ms (1)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.89 ms (1)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.66 ms (1)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 1.32 ms (1)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 312.04 ms (1)
+Aug 03 11:17:14 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 8.23 ms (4)
+Aug 03 11:17:32 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:17:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:17:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:17:32 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:17:32 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:17:32 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:17:33 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:33 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 03 11:17:33 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:33 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:33 symfony [err] {InvalidArgumentException} Widget "pnf" does not exist.
+Aug 03 11:17:33 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\exception\sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:33 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 03 11:17:33 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Configuration 280.18 ms (12)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Factories 27.06 ms (1)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 47.29 ms (1)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.64 ms (3)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 904.47 ms (1)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.20 ms (1)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.97 ms (1)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 2.81 ms (1)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 394.64 ms (1)
+Aug 03 11:17:33 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 93.18 ms (5)
+Aug 03 11:17:43 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:17:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:17:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:17:43 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:17:43 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:17:43 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:17:44 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:44 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:17:44 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p - ()
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_actions.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_th_tabular.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_pagination.php"
+Aug 03 11:17:44 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.nacionalidad AS p__nacionalidad, p.identificacion AS p__identificacion, p.pnombre AS p__pnombre, p.snombre AS p__snombre, p.papellido AS p__papellido, p.sapellido AS p__sapellido, p.genero AS p__genero, p.fnac AS p__fnac, p.pais_origen_id AS p__pais_origen_id, p.estado_id AS p__estado_id, p.municipio_id AS p__municipio_id, p.parroquia_id AS p__parroquia_id, p.direccion AS p__direccion, p.telefono AS p__telefono, p.tlf_casa AS p__tlf_casa, p.tlf_contacto AS p__tlf_contacto, p.correo AS p__correo, p.twitter AS p__twitter, p.seleccionado AS p__seleccionado, p.transferido AS p__transferido, p.pnf_id AS p__pnf_id FROM preinscripcion_curso p LIMIT 20 - ()
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_batch_actions.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_actions.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_batch_actions.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_actions.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_batch_actions.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_footer.php"
+Aug 03 11:17:44 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_themeswitcher.php"
+Aug 03 11:17:44 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 03 11:17:44 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 03 11:17:44 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 03 11:17:44 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:17:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Configuration 336.86 ms (12)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Factories 25.78 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 49.06 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.72 ms (5)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 688.79 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.25 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.40 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 2.40 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 135.92 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 123.57 ms (6)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_actions" 1.52 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list" 23.00 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_th_tabular" 0.93 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_pagination" 1.32 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_batch_actions" 2.26 ms (2)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_tabular" 1.88 ms (2)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_actions" 6.01 ms (2)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_batch_actions" 1.39 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_footer" 0.84 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_themeswitcher" 0.82 ms (1)
+Aug 03 11:17:44 symfony [info] {sfWebResponse} Send content (124997 o)
+Aug 03 11:18:24 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 03 11:18:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 03 11:18:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 03 11:18:27 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 03 11:18:27 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 03 11:18:27 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 03 11:18:27 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:18:27 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 03 11:18:27 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p - ()
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_actions.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_th_tabular.php"
+Aug 03 11:18:27 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_pagination.php"
+Aug 03 11:18:27 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.nacionalidad AS p__nacionalidad, p.identificacion AS p__identificacion, p.pnombre AS p__pnombre, p.snombre AS p__snombre, p.papellido AS p__papellido, p.sapellido AS p__sapellido, p.genero AS p__genero, p.fnac AS p__fnac, p.pais_origen_id AS p__pais_origen_id, p.estado_id AS p__estado_id, p.municipio_id AS p__municipio_id, p.parroquia_id AS p__parroquia_id, p.direccion AS p__direccion, p.telefono AS p__telefono, p.tlf_casa AS p__tlf_casa, p.tlf_contacto AS p__tlf_contacto, p.correo AS p__correo, p.twitter AS p__twitter, p.seleccionado AS p__seleccionado, p.transferido AS p__transferido, p.pnf_id AS p__pnf_id FROM preinscripcion_curso p LIMIT 20 - ()
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_batch_actions.php"
+Aug 03 11:18:27 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 03 11:18:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (24)
+Aug 03 11:18:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 03 11:18:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_actions.php"
+Aug 03 11:18:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_batch_actions.php"
+Aug 03 11:18:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 03 11:18:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (9)
+Aug 03 11:18:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 03 11:18:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_actions.php"
+Aug 03 11:18:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_batch_actions.php"
+Aug 03 11:18:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_footer.php"
+Aug 03 11:18:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_themeswitcher.php"
+Aug 03 11:18:28 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 03 11:18:28 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 03 11:18:28 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:18:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 03 11:18:28 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 03 11:18:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Configuration 2825.54 ms (12)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Factories 29.11 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 49.43 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 6.31 ms (9)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 744.14 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.22 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.36 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 2.50 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 130.10 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 117.47 ms (6)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_actions" 1.51 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list" 58.43 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_th_tabular" 3.71 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_pagination" 1.34 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_batch_actions" 2.30 ms (2)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_tabular" 32.65 ms (2)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_actions" 6.61 ms (2)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_batch_actions" 1.50 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_footer" 0.94 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_themeswitcher" 0.88 ms (1)
+Aug 03 11:18:28 symfony [info] {sfWebResponse} Send content (317378 o)
+Aug 06 21:54:14 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 06 21:54:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 21:54:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 21:54:24 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 06 21:54:26 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 06 21:54:26 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 06 21:54:27 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 06 21:54:28 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 06 21:54:28 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 06 21:54:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 06 21:54:29 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p - ()
+Aug 06 21:54:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_actions.php"
+Aug 06 21:54:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list.php"
+Aug 06 21:54:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_th_tabular.php"
+Aug 06 21:54:29 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 06 21:54:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_pagination.php"
+Aug 06 21:54:29 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.nacionalidad AS p__nacionalidad, p.identificacion AS p__identificacion, p.pnombre AS p__pnombre, p.snombre AS p__snombre, p.papellido AS p__papellido, p.sapellido AS p__sapellido, p.genero AS p__genero, p.fnac AS p__fnac, p.pais_origen_id AS p__pais_origen_id, p.estado_id AS p__estado_id, p.municipio_id AS p__municipio_id, p.parroquia_id AS p__parroquia_id, p.direccion AS p__direccion, p.telefono AS p__telefono, p.tlf_casa AS p__tlf_casa, p.tlf_contacto AS p__tlf_contacto, p.correo AS p__correo, p.twitter AS p__twitter, p.seleccionado AS p__seleccionado, p.transferido AS p__transferido, p.pnf_id AS p__pnf_id FROM preinscripcion_curso p LIMIT 20 - ()
+Aug 06 21:54:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 06 21:54:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (24)
+Aug 06 21:54:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 06 21:54:29 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 06 21:54:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (9)
+Aug 06 21:54:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 06 21:54:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_batch_actions.php"
+Aug 06 21:54:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_footer.php"
+Aug 06 21:54:30 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_themeswitcher.php"
+Aug 06 21:54:30 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 06 21:54:30 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 06 21:54:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 06 21:54:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 21:54:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 06 21:54:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Configuration 11609.99 ms (11)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Factories 2614.87 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 1973.95 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 795.59 ms (9)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 3519.96 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 1.59 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 2.44 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 2.06 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 1147.23 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 998.05 ms (6)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_actions" 3.90 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list" 386.87 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_th_tabular" 10.43 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_pagination" 3.20 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_tabular" 333.39 ms (2)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_batch_actions" 1.69 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_footer" 1.50 ms (1)
+Aug 06 21:54:30 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_themeswitcher" 1.40 ms (1)
+Aug 06 21:54:31 symfony [info] {sfWebResponse} Send content (308061 o)
+Aug 07 10:35:03 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 07 10:35:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 07 10:35:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 07 10:35:05 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 07 10:35:06 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 07 10:35:06 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 07 10:35:07 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 10:35:08 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 10:35:08 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 10:35:09 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p - ()
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_actions.php"
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list.php"
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_th_tabular.php"
+Aug 07 10:35:09 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_pagination.php"
+Aug 07 10:35:09 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.nacionalidad AS p__nacionalidad, p.identificacion AS p__identificacion, p.pnombre AS p__pnombre, p.snombre AS p__snombre, p.papellido AS p__papellido, p.sapellido AS p__sapellido, p.genero AS p__genero, p.fnac AS p__fnac, p.pais_origen_id AS p__pais_origen_id, p.estado_id AS p__estado_id, p.municipio_id AS p__municipio_id, p.parroquia_id AS p__parroquia_id, p.direccion AS p__direccion, p.telefono AS p__telefono, p.tlf_casa AS p__tlf_casa, p.tlf_contacto AS p__tlf_contacto, p.correo AS p__correo, p.twitter AS p__twitter, p.seleccionado AS p__seleccionado, p.transferido AS p__transferido, p.pnf_id AS p__pnf_id FROM preinscripcion_curso p LIMIT 20 - ()
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 07 10:35:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (24)
+Aug 07 10:35:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 07 10:35:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (9)
+Aug 07 10:35:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_batch_actions.php"
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_footer.php"
+Aug 07 10:35:09 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_themeswitcher.php"
+Aug 07 10:35:09 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 10:35:09 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 10:35:09 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 10:35:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 07 10:35:10 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 10:35:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Configuration 24.94 ms (11)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Factories 1832.51 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 1699.40 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 332.45 ms (9)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 2951.39 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 77.40 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 15.56 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 1.15 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 805.76 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 666.43 ms (6)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_actions" 10.89 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list" 553.43 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_th_tabular" 155.29 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_pagination" 66.42 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_tabular" 245.62 ms (2)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_batch_actions" 1.51 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_footer" 1.75 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_themeswitcher" 1.62 ms (1)
+Aug 07 10:35:10 symfony [info] {sfWebResponse} Send content (308061 o)
+Aug 07 14:17:38 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 07 14:17:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 07 14:17:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 07 14:17:42 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 07 14:17:42 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 07 14:17:42 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 07 14:17:43 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 14:17:43 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 14:17:43 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p - ()
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_actions.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_th_tabular.php"
+Aug 07 14:17:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_pagination.php"
+Aug 07 14:17:43 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.nacionalidad AS p__nacionalidad, p.identificacion AS p__identificacion, p.pnombre AS p__pnombre, p.snombre AS p__snombre, p.papellido AS p__papellido, p.sapellido AS p__sapellido, p.genero AS p__genero, p.fnac AS p__fnac, p.pais_origen_id AS p__pais_origen_id, p.estado_id AS p__estado_id, p.municipio_id AS p__municipio_id, p.parroquia_id AS p__parroquia_id, p.direccion AS p__direccion, p.telefono AS p__telefono, p.tlf_casa AS p__tlf_casa, p.tlf_contacto AS p__tlf_contacto, p.correo AS p__correo, p.twitter AS p__twitter, p.seleccionado AS p__seleccionado, p.transferido AS p__transferido, p.pnf_id AS p__pnf_id FROM preinscripcion_curso p LIMIT 20 - ()
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 07 14:17:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (24)
+Aug 07 14:17:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 07 14:17:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (9)
+Aug 07 14:17:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_batch_actions.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_footer.php"
+Aug 07 14:17:43 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_themeswitcher.php"
+Aug 07 14:17:43 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 14:17:43 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 14:17:43 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 14:17:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 07 14:17:43 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 14:17:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Configuration 4442.97 ms (12)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Factories 254.82 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 59.30 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 9.74 ms (9)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 1016.31 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 2.01 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 1.85 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 1.03 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 186.00 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 169.95 ms (6)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_actions" 1.73 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list" 61.09 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_th_tabular" 6.25 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_pagination" 1.45 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_tabular" 41.30 ms (2)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_batch_actions" 1.08 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_footer" 1.00 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_themeswitcher" 0.95 ms (1)
+Aug 07 14:17:44 symfony [info] {sfWebResponse} Send content (307857 o)
+Aug 07 15:20:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /preinscripcion_curso/generalpnf with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'generalpnf',)
+Aug 07 15:20:27 symfony [info] {sfFrontWebController} Action "preinscripcion_curso/generalpnf" does not exist
+Aug 07 15:20:27 symfony [err] {sfError404Exception} Action "preinscripcion_curso/generalpnf" does not exist.
+Aug 07 15:20:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 07 15:20:27 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 15:20:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 07 15:20:27 symfony [info] {sfWebDebugLogger} Configuration 4043.87 ms (7)
+Aug 07 15:20:27 symfony [info] {sfWebDebugLogger} Factories 149.73 ms (1)
+Aug 07 15:20:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /preinscripcion_curso/generalPnf with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'generalPnf',)
+Aug 07 15:20:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 07 15:20:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 07 15:20:52 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeGeneralPnf()"
+Aug 07 15:20:52 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 07 15:20:52 symfony [info] {Doctrine_Connection_Pgsql} query : select b.descripcion,count(1)as total  from preinscripcion_curso a 
+                left join pnf b on a.pnf_id=b.id
+                group by b.descripcion - ()
+Aug 07 15:20:53 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\modules/preinscripcion_curso/templates/generalPnfSuccess.php"
+Aug 07 15:20:53 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 15:20:53 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 15:20:53 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 15:20:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 07 15:20:53 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 15:20:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 07 15:20:53 symfony [info] {sfWebDebugLogger} Configuration 174.16 ms (12)
+Aug 07 15:20:53 symfony [info] {sfWebDebugLogger} Factories 41.79 ms (1)
+Aug 07 15:20:53 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/generalPnf" 41.20 ms (1)
+Aug 07 15:20:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.67 ms (2)
+Aug 07 15:20:53 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/generalPnf" 833.55 ms (1)
+Aug 07 15:20:53 symfony [info] {sfWebResponse} Send content (34261 o)
+Aug 07 15:21:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /preinscripcion_curso/generalPnf with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'generalPnf',)
+Aug 07 15:21:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 07 15:21:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 07 15:21:57 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeGeneralPnf()"
+Aug 07 15:21:57 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 07 15:21:57 symfony [info] {Doctrine_Connection_Pgsql} query : select b.descripcion,count(1)as total  from preinscripcion_curso a 
+                left join pnf b on a.pnf_id=b.id
+                group by b.descripcion - ()
+Aug 07 15:21:58 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\modules/preinscripcion_curso/templates/generalPnfSuccess.php"
+Aug 07 15:21:58 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 15:21:58 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 15:21:58 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 15:21:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 07 15:21:58 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 15:21:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 07 15:21:58 symfony [info] {sfWebDebugLogger} Configuration 4128.01 ms (11)
+Aug 07 15:21:58 symfony [info] {sfWebDebugLogger} Factories 211.62 ms (1)
+Aug 07 15:21:58 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/generalPnf" 21.28 ms (1)
+Aug 07 15:21:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.78 ms (2)
+Aug 07 15:21:58 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/generalPnf" 571.74 ms (1)
+Aug 07 15:21:58 symfony [info] {sfWebResponse} Send content (34264 o)
+Aug 07 15:22:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /preinscripcion_curso/generalpnf with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'generalpnf',)
+Aug 07 15:22:00 symfony [info] {sfFrontWebController} Action "preinscripcion_curso/generalpnf" does not exist
+Aug 07 15:22:00 symfony [err] {sfError404Exception} Action "preinscripcion_curso/generalpnf" does not exist.
+Aug 07 15:22:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 07 15:22:01 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 15:22:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 07 15:22:01 symfony [info] {sfWebDebugLogger} Configuration 17.07 ms (7)
+Aug 07 15:22:01 symfony [info] {sfWebDebugLogger} Factories 186.14 ms (1)
+Aug 07 15:22:03 symfony [info] {sfPatternRouting} Match route "preinscripcion_curso" (/preinscripcion_curso.:sf_format) for /preinscripcion_curso with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'index',  'sf_format' => 'html',)
+Aug 07 15:22:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 07 15:22:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 07 15:22:03 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeIndex()"
+Aug 07 15:22:03 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 07 15:22:03 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT COUNT(*) AS num_results FROM preinscripcion_curso p - ()
+Aug 07 15:22:04 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/indexSuccess.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_assets.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_flashes.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_header.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 15:22:04 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e - ()
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_filters_field.php"
+Aug 07 15:22:04 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p - ()
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_actions.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_th_tabular.php"
+Aug 07 15:22:04 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Set slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {main} Get slot "sf_admin.current_header"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_pagination.php"
+Aug 07 15:22:04 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT p.id AS p__id, p.nacionalidad AS p__nacionalidad, p.identificacion AS p__identificacion, p.pnombre AS p__pnombre, p.snombre AS p__snombre, p.papellido AS p__papellido, p.sapellido AS p__sapellido, p.genero AS p__genero, p.fnac AS p__fnac, p.pais_origen_id AS p__pais_origen_id, p.estado_id AS p__estado_id, p.municipio_id AS p__municipio_id, p.parroquia_id AS p__parroquia_id, p.direccion AS p__direccion, p.telefono AS p__telefono, p.tlf_casa AS p__tlf_casa, p.tlf_contacto AS p__tlf_contacto, p.correo AS p__correo, p.twitter AS p__twitter, p.seleccionado AS p__seleccionado, p.transferido AS p__transferido, p.pnf_id AS p__pnf_id FROM preinscripcion_curso p LIMIT 20 - ()
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 07 15:22:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (24)
+Aug 07 15:22:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_td_tabular.php"
+Aug 07 15:22:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.descripcion AS e__descripcion FROM estado e WHERE (e.id = ?) - (9)
+Aug 07 15:22:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.codigo AS p__codigo, p.descripcion AS p__descripcion, p.tipo_pnf AS p__tipo_pnf FROM pnf p WHERE (p.id = ?) - (1)
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_batch_actions.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_list_footer.php"
+Aug 07 15:22:04 symfony [info] {sfPartialView} Render "C:\wamp\www\preinscripcion\cache\backend\dev\modules/autoPreinscripcion_curso/templates/_themeswitcher.php"
+Aug 07 15:22:04 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 15:22:04 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\templates/layout.php"
+Aug 07 15:22:04 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 15:22:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 07 15:22:04 symfony [warning] {sfWebDebugLogger}  Warning at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\wamp\www\symfony-1.4.20\lib\response\sfWebResponse.class.php:409))
+Aug 07 15:22:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Configuration 27.33 ms (11)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Factories 58.52 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/index" 106.58 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 7.21 ms (9)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/index" 837.91 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_assets" 2.54 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_flashes" 2.07 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_header" 1.51 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters" 142.80 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_filters_field" 128.57 ms (6)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_actions" 2.12 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list" 50.09 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_th_tabular" 3.77 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_pagination" 1.81 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_td_tabular" 34.75 ms (2)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_batch_actions" 1.23 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_list_footer" 1.10 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebDebugLogger} Partial "preinscripcion_curso/_themeswitcher" 1.11 ms (1)
+Aug 07 15:22:05 symfony [info] {sfWebResponse} Send content (308092 o)
+Aug 07 15:29:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /preinscripcion_curso/generalPnf with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'generalPnf',)
+Aug 07 15:29:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 07 15:29:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 07 15:29:02 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeGeneralPnf()"
+Aug 07 15:29:02 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+Aug 07 15:29:02 symfony [info] {Doctrine_Connection_Pgsql} query : select b.descripcion,count(1)as total  from preinscripcion_curso a 
+                left join pnf b on a.pnf_id=b.id
+                group by b.descripcion - ()
+Aug 07 15:29:03 symfony [info] {sfPHPView} Render "C:\wamp\www\preinscripcion\apps\backend\modules/preinscripcion_curso/templates/generalPnfSuccess.php"

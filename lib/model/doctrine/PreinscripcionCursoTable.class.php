@@ -30,4 +30,20 @@ class PreinscripcionCursoTable extends Doctrine_Table
         $q = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($sql);
         return $q;
     }
+    public static function getTotalPnf(){
+        $sql = "select b.descripcion,count(1)as total  from preinscripcion_curso a 
+                left join pnf b on a.pnf_id=b.id
+                group by b.descripcion";
+        $q = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($sql);
+        return $q;
+    }
+    public static function getTotalPnfEstado(){
+        $sql = "select c.descripcion as estado,b.descripcion as pnf,count(1)as total  from preinscripcion_curso a 
+                left join pnf b on a.pnf_id=b.id
+                left join estado c on a.estado_id=c.id
+                group by c.descripcion,b.descripcion
+                order by 1,2";
+        $q = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($sql);
+        return $q;
+    }
 }

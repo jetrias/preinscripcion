@@ -1,7 +1,7 @@
 <?php
 
-require_once dirname(__FILE__).'/../lib/preinscripcion_cursoGeneratorConfiguration.class.php';
-require_once dirname(__FILE__).'/../lib/preinscripcion_cursoGeneratorHelper.class.php';
+require_once dirname(__FILE__) . '/../lib/preinscripcion_cursoGeneratorConfiguration.class.php';
+require_once dirname(__FILE__) . '/../lib/preinscripcion_cursoGeneratorHelper.class.php';
 
 /**
  * preinscripcion_curso actions.
@@ -11,63 +11,77 @@ require_once dirname(__FILE__).'/../lib/preinscripcion_cursoGeneratorHelper.clas
  * @author     Your name here
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
-class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions
-{
-    private $home='/pre/index.php/preinscripcion_curso/buscar';
-     public function executeIndex(sfWebRequest $request){
-         
-         $this->getUser()->setFlash('error', sprintf('Se ha detectado una acción inválida en el sistema!'));
-        
-         $this->redirect($this->home);
-     }
-      public function executeEdit(sfWebRequest $request)
-  {
-    $this->getUser()->setFlash('error', sprintf('Se ha detectado una acción inválida en el sistema!'));
-    $this->redirect($this->home);
-  }
-protected function processForm(sfWebRequest $request, sfForm $form)
-  {
-    $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
-    if ($form->isValid())
-    {
-      $notice = $form->getObject()->isNew() ? 'The item was created successfully.' : 'The item was updated successfully.';
-      $preinscripcion = $form->save();
-      $this->dispatcher->notify(new sfEvent($this, 'admin.save_object', array('object' => $preinscripcion)));
-      if ($request->hasParameter('_save_and_add'))
-      {
-        $this->getUser()->setFlash('notice', $notice.' You can add another one below.');
-        $this->redirect('@preinscripcion_curso_new');
-      }
-      else
-      {
-        $this->getUser()->setFlash('notice', $notice);
-        $this->redirect('/pre/index.php/preinscripcion_curso/planilla?tip='. $this->form->getValue('nacionalidad').'&ide='.$nombre = $this->form->getValue('identificacion').'');
-        //$this->redirect(array('sf_route' => 'preinscripcion_edit', 'sf_subject' => $preinscripcion));
-      }
+class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
+
+    private $home = '/pre/index.php/preinscripcion_curso/buscar';
+
+    public function executeIndex(sfWebRequest $request) {
+
+        $this->getUser()->setFlash('error', sprintf('Se ha detectado una acción inválida en el sistema!'));
+
+        $this->redirect($this->home);
     }
-    else
-    {
-      $this->getUser()->setFlash('error', 'The item has not been saved due to some errors.', false);
+
+    public function executeEdit(sfWebRequest $request) {
+        $this->getUser()->setFlash('error', sprintf('Se ha detectado una acción inválida en el sistema!'));
+        $this->redirect($this->home);
     }
-  }
-  public function executeBuscar(sfWebRequest $request){
-      $this->buscar = $this->getRequestParameter('buscar');
-      $this->identificacion = $this->getRequestParameter('identificacion');
-      $this->tipoIdentificacion = $this->getRequestParameter('tipo_identificacion');
-      if($this->buscar=='BUSCAR'){
-         // echo $this->identificacion.'-'.$this->tipoIdentificacion;exit();
-          $result=  PreinscripcionCursoTable::getPre($this->tipoIdentificacion,$this->identificacion);
-          if($result[0]['id']!=''){
-              $this->redirect('/pre/index.php/preinscripcion_curso/planilla?tip='.$this->tipoIdentificacion.'&ide='.$this->identificacion.'');
-          }else{
-              $this->redirect('/pre/index.php/preinscripcion_curso/new');
-          }
-      }
-      
-  }
-  public function executePlanilla(sfWebRequest $request){
+
+    protected function processForm(sfWebRequest $request, sfForm $form) {
+        $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
+        if ($form->isValid()) {
+            $notice = $form->getObject()->isNew() ? 'The item was created successfully.' : 'The item was updated successfully.';
+            $preinscripcion = $form->save();
+            $this->dispatcher->notify(new sfEvent($this, 'admin.save_object', array('object' => $preinscripcion)));
+            if ($request->hasParameter('_save_and_add')) {
+                $this->getUser()->setFlash('notice', $notice . ' You can add another one below.');
+                $this->redirect('@preinscripcion_curso_new');
+            } else {
+                $this->getUser()->setFlash('notice', $notice);
+                $this->redirect('/pre/index.php/preinscripcion_curso/planilla?tip=' . $this->form->getValue('nacionalidad') . '&ide=' . $nombre = $this->form->getValue('identificacion') . '');
+                //$this->redirect(array('sf_route' => 'preinscripcion_edit', 'sf_subject' => $preinscripcion));
+            }
+        } else {
+            $this->getUser()->setFlash('error', 'The item has not been saved due to some errors.', false);
+        }
+    }
+
+    public function executeBuscar(sfWebRequest $request) {
+        $this->buscar = $this->getRequestParameter('buscar');
+        $this->enviar = $this->getRequestParameter('enviar');
+        // echo $this->enviar.'--'.$this->buscar;
+
+        if ($this->buscar == 'BUSCAR') {
+            $this->identificacion = $this->getRequestParameter('identificacion');
+            $this->tipoIdentificacion = $this->getRequestParameter('tipo_identificacion');
+            // echo $this->identificacion.'-'.$this->tipoIdentificacion;exit();
+            $result = PreinscripcionCursoTable::getPre($this->tipoIdentificacion, $this->identificacion);
+            if ($result[0]['id'] != '') {
+                $this->redirect('/pre/index.php/preinscripcion_curso/planilla?tip=' . $this->tipoIdentificacion . '&ide=' . $this->identificacion . '');
+            } else {
+                $this->redirect('/pre/index.php/preinscripcion_curso/new');
+            }
+        }
+        if ($this->enviar == 'Enviar') {
+            $this->usuario = $this->getRequestParameter('usuario');
+            $this->clave = $this->getRequestParameter('clave');
+            if (trim($this->usuario) != '' && trim($this->clave) != '') {
+                $result = Usuarios2Table::buscaUsuario($this->usuario, $this->clave);
+                if ($result[0]['id'] != '') {
+                    $this->getUser()->setAuthenticated(true);
+                    $this->redirect('/pre/backend.php/preinscripcion_curso');
+                } else {
+                    $this->getUser()->setFlash('error2', sprintf('¡No existe la combinacion usuario clave ingresada!'));
+                }
+            } else {
+                $this->getUser()->setFlash('error2', sprintf('¡Debe llenar todos los campos del formulario!'));
+            }
+        }
+    }
+
+    public function executePlanilla(sfWebRequest $request) {
 //      print_r($request);
-        $data=PreinscripcionCursoTable::getPre($this->getRequestParameter('tip'),$this->getRequestParameter('ide'));
+        $data = PreinscripcionCursoTable::getPre($this->getRequestParameter('tip'), $this->getRequestParameter('ide'));
         $edad = $this->edad($data[0]['fnac']);
         $fecha2 = date("d-m-Y", strtotime($data[0]['fnac']));
         if ($data[0]['tipo_identificacion'] == 'V') {
@@ -89,8 +103,8 @@ protected function processForm(sfWebRequest $request, sfForm $form)
         $pdf->setPrintHeader(false);
         $pdf->setPrintFooter(false);
         $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
-        $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP-15, PDF_MARGIN_RIGHT);
-        $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM-15);
+        $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP - 15, PDF_MARGIN_RIGHT);
+        $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM - 15);
         $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
         $pdf->setFontSubsetting(true);
         $pdf->SetFont('dejavusans', '', 14, '', true);
@@ -125,12 +139,12 @@ protected function processForm(sfWebRequest $request, sfForm $form)
             <b>PLANILLA DE PREINSCRIPCIÓN ASPIRANTES PNF 2018</b><br><br><br>    
 </td><td width="20%" align="center"><br><br><br><br><br>FOTO<br>de frente<br><br><br></td></tr>
 <tr><td align="center" colspan="3"><b>DATOS PERSONALES</b></td></tr>
-<tr bgcolor="#CCCCCC"><td>Nombres: '.$data[0]['pnombre'].' '.$data[0]['snombre'].'</td><td>Apellidos: '.$data[0]['papellido'].' '.$data[0]['sapellido'].'</td><td>Género: '.$data[0]['genero'].'</td></tr>
-<tr><td>Nacionalidad: '.$data[0]['nacionalidad'].'</td><td>Cédula:'.$data[0]['identificacion'].'</td><td>Edad: '.$edad.'</td></tr>
-<tr bgcolor="#CCCCCC"><td colspan="3">Programa Nacional de Formación al que aspira ingresar: <b>'.$data[0]['pnf'].'</b></td></tr>    
-<tr><td>Teléfono: '.$data[0]['telefono'].'</td><td>Correo:'.$data[0]['correo'].'</td><td>Pais de Origen: '.$data[0]['pais_origen'].'</td></tr>      
-<tr bgcolor="#CCCCCC"><td>ESTADO: '.$data[0]['estado'].'</td><td>MUNICIPIO: '.$data[0]['municipio'].'</td><td>PARROQUIA: '.$data[0]['parroquia'].'</td></tr>
-<tr><td colspan="3">Dirección: '.$data[0]['direccion'].'</td></tr></table>
+<tr bgcolor="#CCCCCC"><td>Nombres: ' . $data[0]['pnombre'] . ' ' . $data[0]['snombre'] . '</td><td>Apellidos: ' . $data[0]['papellido'] . ' ' . $data[0]['sapellido'] . '</td><td>Género: ' . $data[0]['genero'] . '</td></tr>
+<tr><td>Nacionalidad: ' . $data[0]['nacionalidad'] . '</td><td>Cédula:' . $data[0]['identificacion'] . '</td><td>Edad: ' . $edad . '</td></tr>
+<tr bgcolor="#CCCCCC"><td colspan="3">Programa Nacional de Formación al que aspira ingresar: <b>' . $data[0]['pnf'] . '</b></td></tr>    
+<tr><td>Teléfono: ' . $data[0]['telefono'] . '</td><td>Correo:' . $data[0]['correo'] . '</td><td>Pais de Origen: ' . $data[0]['pais_origen'] . '</td></tr>      
+<tr bgcolor="#CCCCCC"><td>ESTADO: ' . $data[0]['estado'] . '</td><td>MUNICIPIO: ' . $data[0]['municipio'] . '</td><td>PARROQUIA: ' . $data[0]['parroquia'] . '</td></tr>
+<tr><td colspan="3">Dirección: ' . $data[0]['direccion'] . '</td></tr></table>
 <table border="0px;" width="100%"cellpadding="0" cellspacing="0" class="clase">
     <tr><td width="30%" align="center"><br><br><br>_________________________________<br> Firma y Sello<br> Dirección de Control de Estudios<br> Secretaría General</td>
         <td width="40%"></td>
@@ -147,12 +161,12 @@ protected function processForm(sfWebRequest $request, sfForm $form)
             <b>PLANILLA DE PREINSCRIPCIÓN ASPIRANTES PNF 2018</b><br><br><br>    
 </td><td width="20%" align="center"><br><br><br><br><br>FOTO<br>de frente<br><br><br></td></tr>
 <tr><td align="center" colspan="3"><b>DATOS PERSONALES</b></td></tr>
-<tr bgcolor="#CCCCCC"><td>Nombres: '.$data[0]['pnombre'].' '.$data[0]['snombre'].'</td><td>Apellidos: '.$data[0]['papellido'].' '.$data[0]['sapellido'].'</td><td>Género: '.$data[0]['genero'].'</td></tr>
-<tr><td>Nacionalidad: '.$data[0]['nacionalidad'].'</td><td>Cédula:'.$data[0]['identificacion'].'</td><td>Edad: '.$edad.'</td></tr>
-<tr bgcolor="#CCCCCC"><td colspan="3">Programa Nacional de Formación al que aspira ingresar: <b>'.$data[0]['pnf'].'</b></td></tr>    
-<tr><td>Teléfono: '.$data[0]['telefono'].'</td><td>Correo:'.$data[0]['correo'].'</td><td>Pais de Origen: '.$data[0]['pais_origen'].'</td></tr>      
-<tr bgcolor="#CCCCCC"><td>ESTADO: '.$data[0]['estado'].'</td><td>MUNICIPIO: '.$data[0]['municipio'].'</td><td>PARROQUIA: '.$data[0]['parroquia'].'</td></tr>
-<tr><td colspan="3">Dirección: '.$data[0]['direccion'].'</td></tr></table>
+<tr bgcolor="#CCCCCC"><td>Nombres: ' . $data[0]['pnombre'] . ' ' . $data[0]['snombre'] . '</td><td>Apellidos: ' . $data[0]['papellido'] . ' ' . $data[0]['sapellido'] . '</td><td>Género: ' . $data[0]['genero'] . '</td></tr>
+<tr><td>Nacionalidad: ' . $data[0]['nacionalidad'] . '</td><td>Cédula:' . $data[0]['identificacion'] . '</td><td>Edad: ' . $edad . '</td></tr>
+<tr bgcolor="#CCCCCC"><td colspan="3">Programa Nacional de Formación al que aspira ingresar: <b>' . $data[0]['pnf'] . '</b></td></tr>    
+<tr><td>Teléfono: ' . $data[0]['telefono'] . '</td><td>Correo:' . $data[0]['correo'] . '</td><td>Pais de Origen: ' . $data[0]['pais_origen'] . '</td></tr>      
+<tr bgcolor="#CCCCCC"><td>ESTADO: ' . $data[0]['estado'] . '</td><td>MUNICIPIO: ' . $data[0]['municipio'] . '</td><td>PARROQUIA: ' . $data[0]['parroquia'] . '</td></tr>
+<tr><td colspan="3">Dirección: ' . $data[0]['direccion'] . '</td></tr></table>
 <table border="0px;" width="100%"cellpadding="0" cellspacing="0" class="clase">
     <tr><td width="30%" align="center"><br><br><br>_________________________________<br> Firma y Sello<br> Dirección de Control de Estudios<br> Secretaría General</td>
         <td width="40%"></td>
@@ -165,11 +179,20 @@ protected function processForm(sfWebRequest $request, sfForm $form)
         $pdf->Output('matricula.pdf', 'I');
         throw new sfStopException();
     }
-      public function edad($fecha) {
+
+    public function edad($fecha) {
         $fecha = str_replace("/", "-", $fecha);
         $fecha = date('Y/m/d', strtotime($fecha));
         $hoy = date('Y/m/d');
         $edad = $hoy - $fecha;
         return $edad;
+    }
+public function executeSalir(sfWebRequest $request) {
+        //limpiando las credenciales
+        $this->getUser()->clearCredentials();
+        //eliminando las sessiones
+        $this->getUser()->getAttributeHolder()->clear();
+        $this->getUser()->setAuthenticated(false);
+        $this->redirect('/pre/index.php/preinscripcion_curso/buscar');
     }
 }
