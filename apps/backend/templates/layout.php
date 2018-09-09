@@ -14,6 +14,7 @@
                 <li><a class="clk fg-button ui-state-default fg-button-icon-left" href="/pre/backend.php/preinscripcion_curso"><span class="ui-icon  ui-icon-home ui-corner-all"></span>Inicio</a></li>
                 <li><a class="clk fg-button ui-state-default fg-button-icon-left" href="/pre/backend.php/preinscripcion_curso/generalPnf"><span class="ui-icon ui-icon-contact ui-corner-all"></span>Inscritos por PNF</a></li>
                 <li><a class="clk fg-button ui-state-default fg-button-icon-left" href="/pre/backend.php/preinscripcion_curso/pnfEstado"><span class="ui-icon ui-icon-contact ui-corner-all"></span>Inscritos por Estado y PNF</a></li>
+                <li><a class="clk fg-button ui-state-default fg-button-icon-left" href="/pre/backend.php/preinscripcion_curso/estado"><span class="ui-icon ui-icon-contact ui-corner-all"></span>Descarga de Listados</a></li>
                 <li><a class="clk fg-button ui-state-default fg-button-icon-left" href="/pre/index.php/preinscripcion_curso/salir"><span class="ui-icon ui-icon-circle-arrow-e ui-corner-all"></span>Salir</a></li>
             </ul>
         </div>
