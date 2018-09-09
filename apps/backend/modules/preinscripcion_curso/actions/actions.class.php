@@ -18,4 +18,14 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions
     }public function executePnfEstado(){
         $this->pnf=  PreinscripcionCursoTable::getTotalPnfEstado();
     }
+    public function executeEstado(){
+        $this->estado=  EstadoTable::getEstado();
+    }
+    public function executeMostrarListado(sfWebRequest $request){
+        
+        $this->estado = $this->getRequestParameter('estado');
+        $this->estudiantes=  EstudianteTable::getEstudianteEstado($this->estado);
+        $this->setLayout(false);
+   
+    }
 }
