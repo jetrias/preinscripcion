@@ -43,6 +43,7 @@ class PreinscripcionCursoForm extends BasePreinscripcionCursoForm
             'add_empty' => true));
         $this->widgetSchema['estado_id'] = new sfWidgetFormDoctrineChoice(array(
             'model' => 'Estado',
+            'table_method'=>'getEstadoDis',
             'add_empty' => 'Seleccione estado'));
         $this->widgetSchema['municipio_id'] = new sfWidgetFormDoctrineDependentSelect(array(
             'model' => 'Municipio',

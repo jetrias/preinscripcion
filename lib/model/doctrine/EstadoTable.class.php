@@ -22,4 +22,12 @@ class EstadoTable extends Doctrine_Table
         $q = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($sql);
         return $q;
     }
+        public static function getEstadoDis(){
+                      //$id = sfContext::getInstance()->getUser()->getAttribute('estudiante_id');
+        $q = Doctrine_Query::create()
+                ->from('estado e')
+                ->addWhere("e.id not in (2)")
+                ->addOrderBy('id', 'ASC');
+        return $q;
+    }
 }
