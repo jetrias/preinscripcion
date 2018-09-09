@@ -1,6 +1,6 @@
 <?php
   header('Content-Type: application/vnd.ms-excel');
-      header('Content-Disposition: attachment;filename="estudiantes-' . date("d-m-Y") . '.xls"');
+      header('Content-Disposition: attachment;filename="estudiantes-'.$estado.'-' . date("d-m-Y") . '.xls"');
       header('Cache-Control: max-age=0');?>
 <table>
     <tr><th>NACIONALIDAD</th><th>IDENTIFICACION</th><th>PRIMER NOMBRE</th><th>SEGUNDO NOMBE</th>
