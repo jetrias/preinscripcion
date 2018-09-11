@@ -42,11 +42,11 @@
                         <tr><th>PROGRAMA NACIONAL DE FORMACIÓN (PNF)</th><th>AUTORIZADO EN:</th></tr> 
                         <tr><td align="center">PNF-MIC: </td><td>MEDICINA INTEGRAL COMUNITARIA	EN TODO EL TERRITORIO NACIONAL</td></tr>
                         <tr><td align="center">PNF-EIC: </td><td>ENFERMERÍA INTEGRAL COMUNITARIA	ANZOÁTEGUI, ARAGUA, CARABOBO, MIRANDA, TRUJILLO, ZULIA</td></tr>
-                        <tr><td align="center">PNF-FT: </td><td>FISIOTERAPIA	AMAZONAS, ANZOÁTEGUI, BARINAS, BOLÍVAR, CARABOBO, DISTRITO CAPITAL, LARA, PORTUGUESA, SUCRE, TRUJILLO, ZULIA</td></tr>
+                        <tr><td align="center">PNF-FT: </td><td>FISIOTERAPIA	TODOS LOS ESTADOS EXCEPTUANDO DELTA AMACURO, GUARICO, COJEDES Y MÉRIDA</td></tr>
                         <tr><td align="center">PNF-RI: </td><td>RADIOIMAGENEOLOGÍA	ANZOÁTEGUI, BARINAS, BOLÍVAR, PORTUGUESA</td></tr>
-                        <tr><td align="center">PNF-OD: </td><td>ODONTOLOGÍA	AMAZONAS, ARAGUA, APURE, FALCÓN, SUCRE</td></tr>
-                        <tr><td align="center">PNF.FAU: </td><td>FONOAUDIOLOGÍA	ANZOÁTEGUI, ARAGUA, DISTRITO CAPITAL</td></tr>
-                        <tr><td align="center">PNF-TO: </td><td>TERAPIA OCUPACIONAL	BOLÍVAR, DISTRITO CAPITAL</td></tr>
+                        <tr><td align="center">PNF-OD: </td><td>ODONTOLOGÍA	AMAZONAS, ARAGUA, APURE, FALCÓN, SUCRE, TÁCHIRA, BOLÍVAR, PORTUGUESA, YARACUY, VARGAS</td></tr>
+                        <tr><td align="center">PNF-FAU: </td><td>FONOAUDIOLOGÍA	ANZOÁTEGUI, ARAGUA</td></tr>
+                        <tr><td align="center">PNF-TO: </td><td>TERAPIA OCUPACIONAL	DISTRITO CAPITAL, BOLIVAR, ARAGUA Y NUEVA ESPARTA</td></tr>
                     </table>
                     <br><br>
                     <center><strong>CRONOGRAMA PARA EL PROCESO DE INGRESO 
