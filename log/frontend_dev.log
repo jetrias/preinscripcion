@@ -558,3 +558,35 @@ Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 17.50 ms (
 Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_form_footer" 4.08 ms (1)
 Apr 26 15:04:09 symfony [info] {sfWebDebugLogger} Partial "preinscripcion/_themeswitcher" 5.12 ms (1)
 Apr 26 15:04:09 symfony [info] {sfWebResponse} Send content (352250 o)
+Aug 02 15:34:14 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /preinscripcion_curso/buscar with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'buscar',)
+Aug 02 15:34:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 02 15:34:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 02 15:34:14 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeBuscar()"
+Aug 02 15:34:14 symfony [info] {sfPHPView} Render "/var/www/preinscripcion/apps/frontend/modules/preinscripcion_curso/templates/buscarSuccess.php"
+Aug 02 15:34:14 symfony [info] {sfPHPView} Decorate content with "/var/www/preinscripcion/apps/frontend/templates/layout.php"
+Aug 02 15:34:14 symfony [info] {sfPHPView} Render "/var/www/preinscripcion/apps/frontend/templates/layout.php"
+Aug 02 15:34:14 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/symfony-1.4.20/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /var/www/symfony-1.4.20/lib/response/sfWebResponse.class.php:409))
+Aug 02 15:34:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 02 15:34:14 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/symfony-1.4.20/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/www/symfony-1.4.20/lib/response/sfWebResponse.class.php:409))
+Aug 02 15:34:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 02 15:34:14 symfony [info] {sfWebDebugLogger} Configuration 52.31 ms (12)
+Aug 02 15:34:14 symfony [info] {sfWebDebugLogger} Factories 54.77 ms (1)
+Aug 02 15:34:14 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/buscar" 1.49 ms (1)
+Aug 02 15:34:14 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/buscar" 6.56 ms (1)
+Aug 02 15:34:14 symfony [info] {sfWebResponse} Send content (48877 o)
+Aug 02 15:34:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /preinscripcion_curso/buscar with parameters array (  'module' => 'preinscripcion_curso',  'action' => 'buscar',)
+Aug 02 15:34:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 02 15:34:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 02 15:34:38 symfony [info] {preinscripcion_cursoActions} Call "preinscripcion_cursoActions->executeBuscar()"
+Aug 02 15:34:38 symfony [info] {sfPHPView} Render "/var/www/preinscripcion/apps/frontend/modules/preinscripcion_curso/templates/buscarSuccess.php"
+Aug 02 15:34:38 symfony [info] {sfPHPView} Decorate content with "/var/www/preinscripcion/apps/frontend/templates/layout.php"
+Aug 02 15:34:38 symfony [info] {sfPHPView} Render "/var/www/preinscripcion/apps/frontend/templates/layout.php"
+Aug 02 15:34:38 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/symfony-1.4.20/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /var/www/symfony-1.4.20/lib/response/sfWebResponse.class.php:409))
+Aug 02 15:34:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 02 15:34:38 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/symfony-1.4.20/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/www/symfony-1.4.20/lib/response/sfWebResponse.class.php:409))
+Aug 02 15:34:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 02 15:34:38 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (11)
+Aug 02 15:34:38 symfony [info] {sfWebDebugLogger} Factories 6.94 ms (1)
+Aug 02 15:34:38 symfony [info] {sfWebDebugLogger} Action "preinscripcion_curso/buscar" 1.59 ms (1)
+Aug 02 15:34:38 symfony [info] {sfWebDebugLogger} View "Success" for "preinscripcion_curso/buscar" 3.31 ms (1)
+Aug 02 15:34:38 symfony [info] {sfWebResponse} Send content (48842 o)
