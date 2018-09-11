@@ -262,7 +262,7 @@
                                         <input type="text" placeholder="usuario" id="usuario" name="usuario" pattern='[A-Z 0-9]{4,12}' style="width:155px" required/>
                                     </td></tr><tr>
                                     <td>
-                                        <input type="password" name="clave" id="clave"  maxlength="12" pattern='[A-Z 0-9]{4,12}' style="width:155px" placeholder="clave" required/>
+                                        <input type="password" name="clave" id="clave"  maxlength="12" pattern='[A-Z a-z 0-9]{4,12}' style="width:155px" placeholder="clave" required/>
                                     </td>
                                 </tr>
                                 <tr>
