@@ -60,8 +60,7 @@
                                 MIÉRCOLES 01 
                                 DE AGOSTO 2018
 
-                                AL
-                                DOMINGO 09 
+                                AL LUNES 24 
                                 DE SEPTIEMBRE 2018</td><td>	
                         <center><strong>I - PREINSCRIPCIÓN</strong></center> <br>
                         •	EN LÍNEA 
@@ -77,7 +76,7 @@
 
                                 AL
 
-                                MIÉRCOLES 26 
+                                MARTES 25 
                                 DE SEPTIEMBRE 2018</td><td>
                         <center><strong>II - FORMALIZACIÓN DE LA MATRICULA:</strong></center><br>
 
