@@ -162,7 +162,8 @@
                 <a href="javascript:clickModal2()" class="fg-button ui-state-default fg-button-icon-left"><span class="ui-icon ui-icon-contact"></span>Requisitos</a><br>
                 <a href="javascript:clickModal()" class="fg-button ui-state-default fg-button-icon-left"><span class="ui-icon ui-icon-folder-collapsed"></span>Formalización de Inscripción</a>
                 <a href="/pre/uploads/au_ucs_est.pdf" class="fg-button ui-state-default fg-button-icon-left"><span class="ui-icon ui-icon-person"></span>Directorio de Autoridades Estadales</a>
-                <br>
+                <a href="/pre/uploads/ptos_inscripcion.xls" class="fg-button ui-state-default fg-button-icon-left"><span class="ui-icon ui-icon-script"></span>Puntos de Inscripcion a nivel Nacional</a>
+                <br><br><br>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
                         <div class="modal-header">
