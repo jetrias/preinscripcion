@@ -104,7 +104,7 @@
                     </div>
                     <br/>
                     <br/>
-                    <form method="POST" action="/pre/index.php/preinscripcion_curso/buscar" name="buscarForm" id="buscarForm" onSubmit="return enviar()" autocomplete="off">
+                    <!--form method="POST" action="/pre/index.php/preinscripcion_curso/buscar" name="buscarForm" id="buscarForm" onSubmit="return enviar()" autocomplete="off">
                         <center>
                             <table>
                                 <tr>
@@ -155,7 +155,7 @@
                                 </tr>
                             </table>
                         </center>
-                    </form>
+                    </form-->
                     <br/>
                     <br/>
                 </div><br>

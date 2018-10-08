@@ -47,6 +47,7 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
     }
 
     public function executeBuscar(sfWebRequest $request) {
+       
         $this->buscar = $this->getRequestParameter('buscar');
         $this->enviar = $this->getRequestParameter('enviar');
         // echo $this->enviar.'--'.$this->buscar;
@@ -78,6 +79,12 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
             }
         }
     }
+     public function executeNew(sfWebRequest $request)
+  {
+    $this->redirect($this->home);//para vuelva a funcionar todo comentar esta linea
+    $this->form = $this->configuration->getForm();
+    $this->preinscripcion_curso = $this->form->getObject();
+  }
 
     public function executePlanilla(sfWebRequest $request) {
 //      print_r($request);
