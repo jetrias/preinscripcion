@@ -29,11 +29,13 @@ Doctrine_Manager::getInstance()->bindComponent('PreinscripcionCurso', 'doctrine'
  * @property boolean $seleccionado
  * @property boolean $transferido
  * @property integer $pnf_id
+ * @property integer $pnf_pre_id
  * @property Estado $Estado
  * @property Municipio $Municipio
  * @property PaisOrigen $PaisOrigen
  * @property Parroquia $Parroquia
  * @property Pnf $Pnf
+ * @property PnfPre $PnfPre
  * 
  * @method integer             getId()             Returns the current record's "id" value
  * @method string              getNacionalidad()   Returns the current record's "nacionalidad" value
@@ -57,11 +59,13 @@ Doctrine_Manager::getInstance()->bindComponent('PreinscripcionCurso', 'doctrine'
  * @method boolean             getSeleccionado()   Returns the current record's "seleccionado" value
  * @method boolean             getTransferido()    Returns the current record's "transferido" value
  * @method integer             getPnfId()          Returns the current record's "pnf_id" value
+ * @method integer             getPnfPreId()       Returns the current record's "pnf_pre_id" value
  * @method Estado              getEstado()         Returns the current record's "Estado" value
  * @method Municipio           getMunicipio()      Returns the current record's "Municipio" value
  * @method PaisOrigen          getPaisOrigen()     Returns the current record's "PaisOrigen" value
  * @method Parroquia           getParroquia()      Returns the current record's "Parroquia" value
  * @method Pnf                 getPnf()            Returns the current record's "Pnf" value
+ * @method PnfPre              getPnfPre()         Returns the current record's "PnfPre" value
  * @method PreinscripcionCurso setId()             Sets the current record's "id" value
  * @method PreinscripcionCurso setNacionalidad()   Sets the current record's "nacionalidad" value
  * @method PreinscripcionCurso setIdentificacion() Sets the current record's "identificacion" value
@@ -84,11 +88,13 @@ Doctrine_Manager::getInstance()->bindComponent('PreinscripcionCurso', 'doctrine'
  * @method PreinscripcionCurso setSeleccionado()   Sets the current record's "seleccionado" value
  * @method PreinscripcionCurso setTransferido()    Sets the current record's "transferido" value
  * @method PreinscripcionCurso setPnfId()          Sets the current record's "pnf_id" value
+ * @method PreinscripcionCurso setPnfPreId()       Sets the current record's "pnf_pre_id" value
  * @method PreinscripcionCurso setEstado()         Sets the current record's "Estado" value
  * @method PreinscripcionCurso setMunicipio()      Sets the current record's "Municipio" value
  * @method PreinscripcionCurso setPaisOrigen()     Sets the current record's "PaisOrigen" value
  * @method PreinscripcionCurso setParroquia()      Sets the current record's "Parroquia" value
  * @method PreinscripcionCurso setPnf()            Sets the current record's "Pnf" value
+ * @method PreinscripcionCurso setPnfPre()         Sets the current record's "PnfPre" value
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -272,7 +278,15 @@ abstract class BasePreinscripcionCurso extends sfDoctrineRecord
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
-             'notnull' => true,
+             'notnull' => false,
+             'primary' => false,
+             'length' => 4,
+             ));
+        $this->hasColumn('pnf_pre_id', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'notnull' => false,
              'primary' => false,
              'length' => 4,
              ));
@@ -299,6 +313,10 @@ abstract class BasePreinscripcionCurso extends sfDoctrineRecord
 
         $this->hasOne('Pnf', array(
              'local' => 'pnf_id',
+             'foreign' => 'id'));
+
+        $this->hasOne('PnfPre', array(
+             'local' => 'pnf_pre_id',
              'foreign' => 'id'));
     }
 }

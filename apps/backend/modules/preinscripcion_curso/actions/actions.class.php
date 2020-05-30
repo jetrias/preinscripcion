@@ -24,7 +24,13 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions
     public function executeMostrarListado(sfWebRequest $request){
         
         $this->estado = $this->getRequestParameter('estado');
-        $this->estudiantes=  EstudianteTable::getEstudianteEstado($this->estado);
+        $this->estudiantes =  EstudianteTable::getEstudianteEstado($this->estado);
+        $this->setLayout(false);
+   
+    }
+    public function executeMostrarListado2(sfWebRequest $request){
+        
+        $this->estudiantes =  EstudianteTable::getEstudiante();
         $this->setLayout(false);
    
     }

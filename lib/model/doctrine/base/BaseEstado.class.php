@@ -9,29 +9,32 @@ Doctrine_Manager::getInstance()->bindComponent('Estado', 'doctrine');
  * 
  * @property integer $id
  * @property string $descripcion
- * @property Doctrine_Collection $Estudiante
- * @property Doctrine_Collection $Estudiante_5
- * @property Doctrine_Collection $Preinscripcion
- * @property Doctrine_Collection $PreinscripcionCurso
  * @property Doctrine_Collection $Traslado
- * @property Doctrine_Collection $Traslado_3
+ * @property Doctrine_Collection $Traslado_4
+ * @property Doctrine_Collection $Preinscripcion
+ * @property Doctrine_Collection $PnfPre
+ * @property Doctrine_Collection $Estudiante
+ * @property Doctrine_Collection $Estudiante_10
+ * @property Doctrine_Collection $PreinscripcionCurso
  * 
  * @method integer             getId()                  Returns the current record's "id" value
  * @method string              getDescripcion()         Returns the current record's "descripcion" value
- * @method Doctrine_Collection getEstudiante()          Returns the current record's "Estudiante" collection
- * @method Doctrine_Collection getEstudiante5()         Returns the current record's "Estudiante_5" collection
- * @method Doctrine_Collection getPreinscripcion()      Returns the current record's "Preinscripcion" collection
- * @method Doctrine_Collection getPreinscripcionCurso() Returns the current record's "PreinscripcionCurso" collection
  * @method Doctrine_Collection getTraslado()            Returns the current record's "Traslado" collection
- * @method Doctrine_Collection getTraslado3()           Returns the current record's "Traslado_3" collection
+ * @method Doctrine_Collection getTraslado4()           Returns the current record's "Traslado_4" collection
+ * @method Doctrine_Collection getPreinscripcion()      Returns the current record's "Preinscripcion" collection
+ * @method Doctrine_Collection getPnfPre()              Returns the current record's "PnfPre" collection
+ * @method Doctrine_Collection getEstudiante()          Returns the current record's "Estudiante" collection
+ * @method Doctrine_Collection getEstudiante10()        Returns the current record's "Estudiante_10" collection
+ * @method Doctrine_Collection getPreinscripcionCurso() Returns the current record's "PreinscripcionCurso" collection
  * @method Estado              setId()                  Sets the current record's "id" value
  * @method Estado              setDescripcion()         Sets the current record's "descripcion" value
- * @method Estado              setEstudiante()          Sets the current record's "Estudiante" collection
- * @method Estado              setEstudiante5()         Sets the current record's "Estudiante_5" collection
- * @method Estado              setPreinscripcion()      Sets the current record's "Preinscripcion" collection
- * @method Estado              setPreinscripcionCurso() Sets the current record's "PreinscripcionCurso" collection
  * @method Estado              setTraslado()            Sets the current record's "Traslado" collection
- * @method Estado              setTraslado3()           Sets the current record's "Traslado_3" collection
+ * @method Estado              setTraslado4()           Sets the current record's "Traslado_4" collection
+ * @method Estado              setPreinscripcion()      Sets the current record's "Preinscripcion" collection
+ * @method Estado              setPnfPre()              Sets the current record's "PnfPre" collection
+ * @method Estado              setEstudiante()          Sets the current record's "Estudiante" collection
+ * @method Estado              setEstudiante10()        Sets the current record's "Estudiante_10" collection
+ * @method Estado              setPreinscripcionCurso() Sets the current record's "PreinscripcionCurso" collection
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -64,28 +67,32 @@ abstract class BaseEstado extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
+        $this->hasMany('Traslado', array(
+             'local' => 'id',
+             'foreign' => 'estado_emisor_id'));
+
+        $this->hasMany('Traslado as Traslado_4', array(
+             'local' => 'id',
+             'foreign' => 'estado_receptor_id'));
+
+        $this->hasMany('Preinscripcion', array(
+             'local' => 'id',
+             'foreign' => 'estado_id'));
+
+        $this->hasMany('PnfPre', array(
+             'local' => 'id',
+             'foreign' => 'estado_id'));
+
         $this->hasMany('Estudiante', array(
              'local' => 'id',
              'foreign' => 'asic_estado_id'));
 
-        $this->hasMany('Estudiante as Estudiante_5', array(
-             'local' => 'id',
-             'foreign' => 'estado_id'));
-
-        $this->hasMany('Preinscripcion', array(
+        $this->hasMany('Estudiante as Estudiante_10', array(
              'local' => 'id',
              'foreign' => 'estado_id'));
 
         $this->hasMany('PreinscripcionCurso', array(
              'local' => 'id',
              'foreign' => 'estado_id'));
-
-        $this->hasMany('Traslado', array(
-             'local' => 'id',
-             'foreign' => 'estado_emisor_id'));
-
-        $this->hasMany('Traslado as Traslado_3', array(
-             'local' => 'id',
-             'foreign' => 'estado_receptor_id'));
     }
 }

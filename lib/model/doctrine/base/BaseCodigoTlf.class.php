@@ -11,21 +11,21 @@ Doctrine_Manager::getInstance()->bindComponent('CodigoTlf', 'doctrine');
  * @property string $codigo
  * @property string $tipo
  * @property Doctrine_Collection $Estudiante
- * @property Doctrine_Collection $Estudiante_13
- * @property Doctrine_Collection $Estudiante_14
+ * @property Doctrine_Collection $Estudiante_7
+ * @property Doctrine_Collection $Estudiante_8
  * 
- * @method integer             getId()            Returns the current record's "id" value
- * @method string              getCodigo()        Returns the current record's "codigo" value
- * @method string              getTipo()          Returns the current record's "tipo" value
- * @method Doctrine_Collection getEstudiante()    Returns the current record's "Estudiante" collection
- * @method Doctrine_Collection getEstudiante13()  Returns the current record's "Estudiante_13" collection
- * @method Doctrine_Collection getEstudiante14()  Returns the current record's "Estudiante_14" collection
- * @method CodigoTlf           setId()            Sets the current record's "id" value
- * @method CodigoTlf           setCodigo()        Sets the current record's "codigo" value
- * @method CodigoTlf           setTipo()          Sets the current record's "tipo" value
- * @method CodigoTlf           setEstudiante()    Sets the current record's "Estudiante" collection
- * @method CodigoTlf           setEstudiante13()  Sets the current record's "Estudiante_13" collection
- * @method CodigoTlf           setEstudiante14()  Sets the current record's "Estudiante_14" collection
+ * @method integer             getId()           Returns the current record's "id" value
+ * @method string              getCodigo()       Returns the current record's "codigo" value
+ * @method string              getTipo()         Returns the current record's "tipo" value
+ * @method Doctrine_Collection getEstudiante()   Returns the current record's "Estudiante" collection
+ * @method Doctrine_Collection getEstudiante7()  Returns the current record's "Estudiante_7" collection
+ * @method Doctrine_Collection getEstudiante8()  Returns the current record's "Estudiante_8" collection
+ * @method CodigoTlf           setId()           Sets the current record's "id" value
+ * @method CodigoTlf           setCodigo()       Sets the current record's "codigo" value
+ * @method CodigoTlf           setTipo()         Sets the current record's "tipo" value
+ * @method CodigoTlf           setEstudiante()   Sets the current record's "Estudiante" collection
+ * @method CodigoTlf           setEstudiante7()  Sets the current record's "Estudiante_7" collection
+ * @method CodigoTlf           setEstudiante8()  Sets the current record's "Estudiante_8" collection
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -68,14 +68,14 @@ abstract class BaseCodigoTlf extends sfDoctrineRecord
         parent::setUp();
         $this->hasMany('Estudiante', array(
              'local' => 'id',
-             'foreign' => 'codigo_tlf_id'));
-
-        $this->hasMany('Estudiante as Estudiante_13', array(
-             'local' => 'id',
              'foreign' => 'codigo_tlf_casa_id'));
 
-        $this->hasMany('Estudiante as Estudiante_14', array(
+        $this->hasMany('Estudiante as Estudiante_7', array(
              'local' => 'id',
              'foreign' => 'codigo_tlf_contacto'));
+
+        $this->hasMany('Estudiante as Estudiante_8', array(
+             'local' => 'id',
+             'foreign' => 'codigo_tlf_id'));
     }
 }

@@ -19,14 +19,13 @@ Doctrine_Manager::getInstance()->bindComponent('Traslado', 'doctrine');
  * @property date $fecha_recepcion
  * @property string $tipo_traslado
  * @property string $estatus_expediente
- * @property string $observacion
- * @property Estado $Estado
- * @property Estudiante $Estudiante
- * @property Estado $Estado_3
- * @property Municipio $Municipio
- * @property Municipio $Municipio_5
  * @property Asic $Asic
- * @property Asic $Asic_7
+ * @property Asic $Asic_2
+ * @property Estado $Estado
+ * @property Estado $Estado_4
+ * @property Estudiante $Estudiante
+ * @property Municipio $Municipio
+ * @property Municipio $Municipio_7
  * 
  * @method integer    getId()                    Returns the current record's "id" value
  * @method integer    getEstudianteId()          Returns the current record's "estudiante_id" value
@@ -40,14 +39,13 @@ Doctrine_Manager::getInstance()->bindComponent('Traslado', 'doctrine');
  * @method date       getFechaRecepcion()        Returns the current record's "fecha_recepcion" value
  * @method string     getTipoTraslado()          Returns the current record's "tipo_traslado" value
  * @method string     getEstatusExpediente()     Returns the current record's "estatus_expediente" value
- * @method string     getObservacion()           Returns the current record's "observacion" value
- * @method Estado     getEstado()                Returns the current record's "Estado" value
- * @method Estudiante getEstudiante()            Returns the current record's "Estudiante" value
- * @method Estado     getEstado3()               Returns the current record's "Estado_3" value
- * @method Municipio  getMunicipio()             Returns the current record's "Municipio" value
- * @method Municipio  getMunicipio5()            Returns the current record's "Municipio_5" value
  * @method Asic       getAsic()                  Returns the current record's "Asic" value
- * @method Asic       getAsic7()                 Returns the current record's "Asic_7" value
+ * @method Asic       getAsic2()                 Returns the current record's "Asic_2" value
+ * @method Estado     getEstado()                Returns the current record's "Estado" value
+ * @method Estado     getEstado4()               Returns the current record's "Estado_4" value
+ * @method Estudiante getEstudiante()            Returns the current record's "Estudiante" value
+ * @method Municipio  getMunicipio()             Returns the current record's "Municipio" value
+ * @method Municipio  getMunicipio7()            Returns the current record's "Municipio_7" value
  * @method Traslado   setId()                    Sets the current record's "id" value
  * @method Traslado   setEstudianteId()          Sets the current record's "estudiante_id" value
  * @method Traslado   setEstadoEmisorId()        Sets the current record's "estado_emisor_id" value
@@ -60,14 +58,13 @@ Doctrine_Manager::getInstance()->bindComponent('Traslado', 'doctrine');
  * @method Traslado   setFechaRecepcion()        Sets the current record's "fecha_recepcion" value
  * @method Traslado   setTipoTraslado()          Sets the current record's "tipo_traslado" value
  * @method Traslado   setEstatusExpediente()     Sets the current record's "estatus_expediente" value
- * @method Traslado   setObservacion()           Sets the current record's "observacion" value
- * @method Traslado   setEstado()                Sets the current record's "Estado" value
- * @method Traslado   setEstudiante()            Sets the current record's "Estudiante" value
- * @method Traslado   setEstado3()               Sets the current record's "Estado_3" value
- * @method Traslado   setMunicipio()             Sets the current record's "Municipio" value
- * @method Traslado   setMunicipio5()            Sets the current record's "Municipio_5" value
  * @method Traslado   setAsic()                  Sets the current record's "Asic" value
- * @method Traslado   setAsic7()                 Sets the current record's "Asic_7" value
+ * @method Traslado   setAsic2()                 Sets the current record's "Asic_2" value
+ * @method Traslado   setEstado()                Sets the current record's "Estado" value
+ * @method Traslado   setEstado4()               Sets the current record's "Estado_4" value
+ * @method Traslado   setEstudiante()            Sets the current record's "Estudiante" value
+ * @method Traslado   setMunicipio()             Sets the current record's "Municipio" value
+ * @method Traslado   setMunicipio7()            Sets the current record's "Municipio_7" value
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -175,45 +172,37 @@ abstract class BaseTraslado extends sfDoctrineRecord
              'primary' => false,
              'length' => '',
              ));
-        $this->hasColumn('observacion', 'string', null, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'notnull' => false,
-             'primary' => false,
-             'length' => '',
-             ));
     }
 
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('Asic', array(
+             'local' => 'asic_emisor_id',
+             'foreign' => 'id'));
+
+        $this->hasOne('Asic as Asic_2', array(
+             'local' => 'asic_receptor_id',
+             'foreign' => 'id'));
+
         $this->hasOne('Estado', array(
              'local' => 'estado_emisor_id',
+             'foreign' => 'id'));
+
+        $this->hasOne('Estado as Estado_4', array(
+             'local' => 'estado_receptor_id',
              'foreign' => 'id'));
 
         $this->hasOne('Estudiante', array(
              'local' => 'estudiante_id',
              'foreign' => 'id'));
 
-        $this->hasOne('Estado as Estado_3', array(
-             'local' => 'estado_receptor_id',
-             'foreign' => 'id'));
-
         $this->hasOne('Municipio', array(
              'local' => 'municipio_emisor_id',
              'foreign' => 'id'));
 
-        $this->hasOne('Municipio as Municipio_5', array(
+        $this->hasOne('Municipio as Municipio_7', array(
              'local' => 'municipio_receptor_id',
-             'foreign' => 'id'));
-
-        $this->hasOne('Asic', array(
-             'local' => 'asic_emisor_id',
-             'foreign' => 'id'));
-
-        $this->hasOne('Asic as Asic_7', array(
-             'local' => 'asic_receptor_id',
              'foreign' => 'id'));
     }
 }

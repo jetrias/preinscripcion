@@ -44,6 +44,7 @@ abstract class BasePreinscripcionForm extends BaseFormDoctrine
       'ano_pre'              => new sfWidgetFormTextarea(),
       'ano_mgi'              => new sfWidgetFormTextarea(),
       'ano_otra'             => new sfWidgetFormTextarea(),
+      'pnf_pre'              => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
@@ -76,6 +77,7 @@ abstract class BasePreinscripcionForm extends BaseFormDoctrine
       'ano_pre'              => new sfValidatorString(array('required' => false)),
       'ano_mgi'              => new sfValidatorString(array('required' => false)),
       'ano_otra'             => new sfValidatorString(array('required' => false)),
+      'pnf_pre'              => new sfValidatorInteger(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('preinscripcion[%s]');

@@ -34,6 +34,7 @@ abstract class BasePreinscripcionCursoFormFilter extends BaseFormFilterDoctrine
       'seleccionado'   => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
       'transferido'    => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
       'pnf_id'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pnf'), 'add_empty' => true)),
+      'pnf_pre_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('PnfPre'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
@@ -58,6 +59,7 @@ abstract class BasePreinscripcionCursoFormFilter extends BaseFormFilterDoctrine
       'seleccionado'   => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
       'transferido'    => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
       'pnf_id'         => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Pnf'), 'column' => 'id')),
+      'pnf_pre_id'     => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('PnfPre'), 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('preinscripcion_curso_filters[%s]');
@@ -99,6 +101,7 @@ abstract class BasePreinscripcionCursoFormFilter extends BaseFormFilterDoctrine
       'seleccionado'   => 'Boolean',
       'transferido'    => 'Boolean',
       'pnf_id'         => 'ForeignKey',
+      'pnf_pre_id'     => 'ForeignKey',
     );
   }
 }

@@ -36,7 +36,8 @@ abstract class BasePreinscripcionCursoForm extends BaseFormDoctrine
       'twitter'        => new sfWidgetFormTextarea(),
       'seleccionado'   => new sfWidgetFormInputCheckbox(),
       'transferido'    => new sfWidgetFormInputCheckbox(),
-      'pnf_id'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pnf'), 'add_empty' => false)),
+      'pnf_id'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pnf'), 'add_empty' => true)),
+      'pnf_pre_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('PnfPre'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
@@ -61,7 +62,8 @@ abstract class BasePreinscripcionCursoForm extends BaseFormDoctrine
       'twitter'        => new sfValidatorString(array('required' => false)),
       'seleccionado'   => new sfValidatorBoolean(array('required' => false)),
       'transferido'    => new sfValidatorBoolean(array('required' => false)),
-      'pnf_id'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pnf'))),
+      'pnf_id'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pnf'), 'required' => false)),
+      'pnf_pre_id'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('PnfPre'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('preinscripcion_curso[%s]');

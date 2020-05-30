@@ -3,11 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/preinscripcion/lib/form/doctrine/PreinscripcionForm.class.php</file>
-            <file>file:/C:/wamp/www/preinscripcion/config/ProjectConfiguration.class.php</file>
-            <file>file:/C:/wamp/www/preinscripcion/apps/frontend/modules/preinscripcion/config/generator.yml</file>
-            <file>file:/C:/wamp/www/preinscripcion/config/rsync_exclude.txt</file>
-            <file>file:/C:/wamp/www/preinscripcion/config/doctrine/schema.yml</file>
+            <file>file:/C:/UwAmp/www/preinscripcion/apps/frontend/modules/preinscripcion_curso/templates/buscarSuccess.php</file>
         </group>
     </open-files>
 </project-private>

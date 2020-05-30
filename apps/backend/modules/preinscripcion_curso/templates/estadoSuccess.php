@@ -1,16 +1,16 @@
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/reset.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/css/main.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/jquery/redmond/jquery-ui.custom.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/jroller.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/fg.menu.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/fg.buttons.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/ui.selectmenu.css" />
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/jquery.min.js"></script>
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/jquery-ui.custom.min.js"></script>
-<script type="text/javascript" src="/pre/js/menu.js"></script>
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/fg.menu.js"></script>
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/jroller.js"></script>
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/ui.selectmenu.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/reset.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/css/main.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/jquery/redmond/jquery-ui.custom.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/jroller.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/fg.menu.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/fg.buttons.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/ui.selectmenu.css" />
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/js/menu.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/fg.menu.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/jroller.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/ui.selectmenu.js"></script>
 <br><br>
 <style>
     .customers {
@@ -52,12 +52,13 @@
     <div id="sf_admin_header">
     </div>
     <div id="sf_admin_content">
-        <script type="text/javascript" src="/pre/sfDependentSelectPlugin/js/SelectDependiente.min.js"></script>
+        <script type="text/javascript" src="/preinscripcion/web/sfDependentSelectPlugin/js/SelectDependiente.min.js"></script>
         <div class="sf_admin_form">
-            <form target="_blank" method="get" action="/pre/backend.php/preinscripcion_curso/mostrarListado" enctype="multipart/form-data"><input type="hidden" name="sf_method" value="put" />
+            
                 <div class="ui-helper-clearfix"></div>
                 <div id="sf_admin_form_tab_menu">
                     <div id="sf_fieldset_none" class="ui-corner-all">
+                        <form target="_blank" method="get" action="/preinscripcion/web/backend.php/preinscripcion_curso/mostrarListado" enctype="multipart/form-data"><input type="hidden" name="sf_method" value="put" />
                         <table><tr><td>
                                     <select name="estado" id="estado">
                                         <?php
@@ -69,13 +70,22 @@
                             <tr><td>
                                     <br><br><br><br>
                                     <input class=" ui-state-default fg-button-icon-left"  type="submit" value="Generar Reporte" id='enviar' name='enviar'>
+                                    
                                 </td></tr></table>
+                             </form>
+                        <form target="_blank" method="get" action="/preinscripcion/web/backend.php/preinscripcion_curso/mostrarListado2" enctype="multipart/form-data">
+                            <table>
+                             <tr><td><input class=" ui-state-default fg-button-icon-left"  type="submit" value="Generar Reporte Todos los Estados" id='enviar2' name='enviar2'><input type="hidden" name="sf_method" value="put" /></td></tr>
+                            </table>
+                        </form>
                     </div>
                     <br><br><br><br><br><br><br><br>
                 </div>
-            </form>
+           
         </div>
         <div id="sf_admin_footer">
         </div>
     </div>
 </div>
+
+

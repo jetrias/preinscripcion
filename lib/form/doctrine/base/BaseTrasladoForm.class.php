@@ -20,14 +20,13 @@ abstract class BaseTrasladoForm extends BaseFormDoctrine
       'estado_emisor_id'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Estado'), 'add_empty' => true)),
       'municipio_emisor_id'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Municipio'), 'add_empty' => true)),
       'asic_emisor_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Asic'), 'add_empty' => true)),
-      'estado_receptor_id'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Estado_3'), 'add_empty' => true)),
-      'municipio_receptor_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Municipio_5'), 'add_empty' => true)),
-      'asic_receptor_id'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Asic_7'), 'add_empty' => true)),
+      'estado_receptor_id'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Estado_4'), 'add_empty' => true)),
+      'municipio_receptor_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Municipio_7'), 'add_empty' => true)),
+      'asic_receptor_id'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Asic_2'), 'add_empty' => true)),
       'fecha_emision'         => new sfWidgetFormDate(),
       'fecha_recepcion'       => new sfWidgetFormDate(),
       'tipo_traslado'         => new sfWidgetFormTextarea(),
       'estatus_expediente'    => new sfWidgetFormTextarea(),
-      'observacion'           => new sfWidgetFormTextarea(),
     ));
 
     $this->setValidators(array(
@@ -36,14 +35,13 @@ abstract class BaseTrasladoForm extends BaseFormDoctrine
       'estado_emisor_id'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Estado'), 'required' => false)),
       'municipio_emisor_id'   => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Municipio'), 'required' => false)),
       'asic_emisor_id'        => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Asic'), 'required' => false)),
-      'estado_receptor_id'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Estado_3'), 'required' => false)),
-      'municipio_receptor_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Municipio_5'), 'required' => false)),
-      'asic_receptor_id'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Asic_7'), 'required' => false)),
+      'estado_receptor_id'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Estado_4'), 'required' => false)),
+      'municipio_receptor_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Municipio_7'), 'required' => false)),
+      'asic_receptor_id'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Asic_2'), 'required' => false)),
       'fecha_emision'         => new sfValidatorDate(array('required' => false)),
       'fecha_recepcion'       => new sfValidatorDate(array('required' => false)),
       'tipo_traslado'         => new sfValidatorString(array('required' => false)),
       'estatus_expediente'    => new sfValidatorString(array('required' => false)),
-      'observacion'           => new sfValidatorString(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('traslado[%s]');

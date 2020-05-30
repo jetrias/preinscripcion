@@ -13,7 +13,7 @@ require_once dirname(__FILE__) . '/../lib/preinscripcion_cursoGeneratorHelper.cl
  */
 class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
 
-    private $home = '/pre/index.php/preinscripcion_curso/buscar';
+    private $home = '/preinscripcion/web/index.php/preinscripcion_curso/buscar';
 
     public function executeIndex(sfWebRequest $request) {
 
@@ -38,7 +38,7 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
                 $this->redirect('@preinscripcion_curso_new');
             } else {
                 $this->getUser()->setFlash('notice', $notice);
-                $this->redirect('/pre/index.php/preinscripcion_curso/planilla?tip=' . $this->form->getValue('nacionalidad') . '&ide=' . $nombre = $this->form->getValue('identificacion') . '');
+                $this->redirect('/preinscripcion/web/index.php/preinscripcion_curso/planilla?tip=' . $this->form->getValue('nacionalidad') . '&ide=' . $nombre = $this->form->getValue('identificacion') . '');
                 //$this->redirect(array('sf_route' => 'preinscripcion_edit', 'sf_subject' => $preinscripcion));
             }
         } else {
@@ -55,12 +55,13 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
         if ($this->buscar == 'BUSCAR') {
             $this->identificacion = $this->getRequestParameter('identificacion');
             $this->tipoIdentificacion = $this->getRequestParameter('tipo_identificacion');
-            // echo $this->identificacion.'-'.$this->tipoIdentificacion;exit();
+             echo $this->identificacion.'-'.$this->tipoIdentificacion;
             $result = PreinscripcionCursoTable::getPre($this->tipoIdentificacion, $this->identificacion);
+           print_r('result '.$result);
             if ($result[0]['id'] != '') {
-                $this->redirect('/pre/index.php/preinscripcion_curso/planilla?tip=' . $this->tipoIdentificacion . '&ide=' . $this->identificacion . '');
+                $this->redirect('/preinscripcion/web/index.php/preinscripcion_curso/planilla?tip=' . $this->tipoIdentificacion . '&ide=' . $this->identificacion . '');
             } else {
-                $this->redirect('/pre/index.php/preinscripcion_curso/new');
+                $this->redirect('/preinscripcion/web/index.php/preinscripcion_curso/new');
             }
         }
         if ($this->enviar == 'Enviar') {
@@ -70,7 +71,7 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
                 $result = Usuarios2Table::buscaUsuario($this->usuario, $this->clave);
                 if ($result[0]['id'] != '') {
                     $this->getUser()->setAuthenticated(true);
-                    $this->redirect('/pre/backend.php/preinscripcion_curso');
+                    $this->redirect('/preinscripcion/web/backend.php/preinscripcion_curso');
                 } else {
                     $this->getUser()->setFlash('error2', sprintf('¡No existe la combinacion usuario clave ingresada!'));
                 }
@@ -81,7 +82,7 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
     }
      public function executeNew(sfWebRequest $request)
   {
-    $this->redirect($this->home);//para vuelva a funcionar todo comentar esta linea
+    //$this->redirect($this->home);//para vuelva a funcionar todo comentar esta linea
     $this->form = $this->configuration->getForm();
     $this->preinscripcion_curso = $this->form->getObject();
   }
@@ -105,8 +106,8 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
         $pdf->SetCreator(PDF_CREATOR);
         $pdf->SetAuthor('SIGE');
         $pdf->SetTitle('Matrícula');
-        $pdf->SetSubject('SIGE - Matrícula');
-        $pdf->SetKeywords('SIGE, PDF, Matrícula');
+        $pdf->SetSubject('SIGAE - Matrícula');
+        $pdf->SetKeywords('SIGAE, PDF, Matrícula');
         $pdf->setPrintHeader(false);
         $pdf->setPrintFooter(false);
         $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
@@ -143,7 +144,7 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
     <tr><td align="center" colspan="3"></td></tr>
     <tr><td colspan="2" width="80%" align="center"><br><br><br><br>REPÚBLICA BOLIVARIANA DE VENEZUELA<br>
             UNIVERSIDAD DE LAS CIENCIAS DE LA SALUD "HUGO CHÁVEZ FRÍAS"<br>
-            <b>PLANILLA DE PREINSCRIPCIÓN ASPIRANTES PNF 2018</b><br><br><br>    
+            <b>PLANILLA DE PREINSCRIPCIÓN ASPIRANTES PNF 2020</b><br><br><br>    
 </td><td width="20%" align="center"><br><br><br><br><br>FOTO<br>de frente<br><br><br></td></tr>
 <tr><td align="center" colspan="3"><b>DATOS PERSONALES</b></td></tr>
 <tr bgcolor="#CCCCCC"><td>Nombres: ' . $data[0]['pnombre'] . ' ' . $data[0]['snombre'] . '</td><td>Apellidos: ' . $data[0]['papellido'] . ' ' . $data[0]['sapellido'] . '</td><td>Género: ' . $data[0]['genero'] . '</td></tr>
@@ -165,7 +166,7 @@ class preinscripcion_cursoActions extends autoPreinscripcion_cursoActions {
     <tr><td align="center" colspan="3"></td></tr>
     <tr><td colspan="2" width="80%" align="center"><br><br><br><br>REPÚBLICA BOLIVARIANA DE VENEZUELA<br>
             UNIVERSIDAD DE LAS CIENCIAS DE LA SALUD "HUGO CHÁVEZ FRÍAS"<br>
-            <b>PLANILLA DE PREINSCRIPCIÓN ASPIRANTES PNF 2018</b><br><br><br>    
+            <b>PLANILLA DE PREINSCRIPCIÓN ASPIRANTES PNF 2020</b><br><br><br>    
 </td><td width="20%" align="center"><br><br><br><br><br>FOTO<br>de frente<br><br><br></td></tr>
 <tr><td align="center" colspan="3"><b>DATOS PERSONALES</b></td></tr>
 <tr bgcolor="#CCCCCC"><td>Nombres: ' . $data[0]['pnombre'] . ' ' . $data[0]['snombre'] . '</td><td>Apellidos: ' . $data[0]['papellido'] . ' ' . $data[0]['sapellido'] . '</td><td>Género: ' . $data[0]['genero'] . '</td></tr>
@@ -200,6 +201,8 @@ public function executeSalir(sfWebRequest $request) {
         //eliminando las sessiones
         $this->getUser()->getAttributeHolder()->clear();
         $this->getUser()->setAuthenticated(false);
-        $this->redirect('/pre/index.php/preinscripcion_curso/buscar');
+        $this->redirect('/preinscripcion/web/index.php/preinscripcion_curso/buscar');
     }
+    
+
 }

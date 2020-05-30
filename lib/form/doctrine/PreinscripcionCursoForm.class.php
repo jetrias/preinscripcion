@@ -12,7 +12,7 @@ class PreinscripcionCursoForm extends BasePreinscripcionCursoForm
 {
   public function configure()
   {
-      unset($this['seleccionado'],$this['transferido']);
+      unset($this['seleccionado'],$this['transferido'],$this['pnf_id']);
             $years = range(date('Y') - 80, date('Y') - 15);
       $this->widgetSchema['nacionalidad'] = new sfWidgetFormChoice(array(
             'choices' => array('' => 'Seleccione',
@@ -60,10 +60,19 @@ class PreinscripcionCursoForm extends BasePreinscripcionCursoForm
 //        $this->widgetSchema['pnf_id'] = new sfWidgetFormDoctrineChoice(array(
 //                'model' => 'pnf',
 //                'add_empty' => 'Seleccione'));
-        $this->widgetSchema['pnf_id'] = new sfWidgetFormDoctrineChoice(array(
+        /*$this->widgetSchema['pnf_id'] = new sfWidgetFormDoctrineChoice(array(
                  'model'     => 'pnf',
                  'table_method'=>'getPnf',
                  'add_empty' => 'Seleccione',
-));
+));*/
+        
+       // $form->setOption('allow_extra_fields', false);
+        $this->widgetSchema['pnf_pre_id'] = new sfWidgetFormDoctrineDependentSelect(array(
+            'model' => 'PnfPre',
+            'depends' => 'Estado',
+            'add_empty' => 'Seleccione',
+//            'ajax' => true,
+            ));
+        $this->validatorSchema->setOption('allow_extra_fields', true);
   }
 }

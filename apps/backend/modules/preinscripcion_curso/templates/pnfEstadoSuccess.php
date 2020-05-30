@@ -1,16 +1,16 @@
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/reset.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/css/main.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/jquery/redmond/jquery-ui.custom.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/jroller.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/fg.menu.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/fg.buttons.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="/pre/sfAdminThemejRollerPlugin/css/ui.selectmenu.css" />
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/jquery.min.js"></script>
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/jquery-ui.custom.min.js"></script>
-<script type="text/javascript" src="/pre/js/menu.js"></script>
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/fg.menu.js"></script>
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/jroller.js"></script>
-<script type="text/javascript" src="/pre/sfAdminThemejRollerPlugin/js/ui.selectmenu.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/reset.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/css/main.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/jquery/redmond/jquery-ui.custom.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/jroller.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/fg.menu.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/fg.buttons.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/preinscripcion/web/sfAdminThemejRollerPlugin/css/ui.selectmenu.css" />
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/js/menu.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/fg.menu.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/jroller.js"></script>
+<script type="text/javascript" src="/preinscripcion/web/sfAdminThemejRollerPlugin/js/ui.selectmenu.js"></script>
 <br><br>
 <style>
     .customers {

@@ -41,6 +41,7 @@ abstract class BasePreinscripcionFormFilter extends BaseFormFilterDoctrine
       'ano_pre'              => new sfWidgetFormFilterInput(),
       'ano_mgi'              => new sfWidgetFormFilterInput(),
       'ano_otra'             => new sfWidgetFormFilterInput(),
+      'pnf_pre'              => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
@@ -72,6 +73,7 @@ abstract class BasePreinscripcionFormFilter extends BaseFormFilterDoctrine
       'ano_pre'              => new sfValidatorPass(array('required' => false)),
       'ano_mgi'              => new sfValidatorPass(array('required' => false)),
       'ano_otra'             => new sfValidatorPass(array('required' => false)),
+      'pnf_pre'              => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
     ));
 
     $this->widgetSchema->setNameFormat('preinscripcion_filters[%s]');
@@ -120,6 +122,7 @@ abstract class BasePreinscripcionFormFilter extends BaseFormFilterDoctrine
       'ano_pre'              => 'Text',
       'ano_mgi'              => 'Text',
       'ano_otra'             => 'Text',
+      'pnf_pre'              => 'Number',
     );
   }
 }

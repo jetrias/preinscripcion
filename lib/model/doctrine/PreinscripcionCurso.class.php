@@ -12,5 +12,12 @@
  */
 class PreinscripcionCurso extends BasePreinscripcionCurso
 {
+public function save(Doctrine_Connection $conn = null)
+    {
 
+        $pnfPre = PreinscripcionCursoTable::getPnfPre($this->getPnfPreId());
+        $pnf_id=$pnfPre[0]['pnf_id'];
+        $this->setPnfId($pnf_id);
+        return parent::save($conn);
+    }
 }

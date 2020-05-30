@@ -11,24 +11,24 @@ Doctrine_Manager::getInstance()->bindComponent('Pnf', 'doctrine');
  * @property string $codigo
  * @property string $descripcion
  * @property string $tipo_pnf
+ * @property Doctrine_Collection $Notas
  * @property Doctrine_Collection $UnidadCurricular
  * @property Doctrine_Collection $PreinscripcionCurso
- * @property Doctrine_Collection $Notas
  * 
  * @method integer             getId()                  Returns the current record's "id" value
  * @method string              getCodigo()              Returns the current record's "codigo" value
  * @method string              getDescripcion()         Returns the current record's "descripcion" value
  * @method string              getTipoPnf()             Returns the current record's "tipo_pnf" value
+ * @method Doctrine_Collection getNotas()               Returns the current record's "Notas" collection
  * @method Doctrine_Collection getUnidadCurricular()    Returns the current record's "UnidadCurricular" collection
  * @method Doctrine_Collection getPreinscripcionCurso() Returns the current record's "PreinscripcionCurso" collection
- * @method Doctrine_Collection getNotas()               Returns the current record's "Notas" collection
  * @method Pnf                 setId()                  Sets the current record's "id" value
  * @method Pnf                 setCodigo()              Sets the current record's "codigo" value
  * @method Pnf                 setDescripcion()         Sets the current record's "descripcion" value
  * @method Pnf                 setTipoPnf()             Sets the current record's "tipo_pnf" value
+ * @method Pnf                 setNotas()               Sets the current record's "Notas" collection
  * @method Pnf                 setUnidadCurricular()    Sets the current record's "UnidadCurricular" collection
  * @method Pnf                 setPreinscripcionCurso() Sets the current record's "PreinscripcionCurso" collection
- * @method Pnf                 setNotas()               Sets the current record's "Notas" collection
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -77,15 +77,15 @@ abstract class BasePnf extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
+        $this->hasMany('Notas', array(
+             'local' => 'id',
+             'foreign' => 'pnf_id'));
+
         $this->hasMany('UnidadCurricular', array(
              'local' => 'id',
              'foreign' => 'pnf_id'));
 
         $this->hasMany('PreinscripcionCurso', array(
-             'local' => 'id',
-             'foreign' => 'pnf_id'));
-
-        $this->hasMany('Notas', array(
              'local' => 'id',
              'foreign' => 'pnf_id'));
     }

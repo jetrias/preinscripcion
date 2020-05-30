@@ -12,32 +12,32 @@ Doctrine_Manager::getInstance()->bindComponent('Notas', 'doctrine');
  * @property string $codigo_carrera
  * @property string $unidad_curricular
  * @property string $seccion
- * @property string $nota
+ * @property decimal $nota
  * @property string $cedula
  * @property integer $pnf_id
  * @property integer $estudiante_id
  * @property string $codigo2
  * @property integer $unidad_curricular_id
  * @property integer $id
- * @property UnidadCurricular $UnidadCurricular
- * @property Pnf $Pnf
  * @property Estudiante $Estudiante
+ * @property Pnf $Pnf
+ * @property UnidadCurricular $UnidadCurricular
  * 
  * @method string           getPeriodo()              Returns the current record's "periodo" value
  * @method string           getPasaporte()            Returns the current record's "pasaporte" value
  * @method string           getCodigoCarrera()        Returns the current record's "codigo_carrera" value
  * @method string           getUnidadCurricular()     Returns the current record's "unidad_curricular" value
  * @method string           getSeccion()              Returns the current record's "seccion" value
- * @method string           getNota()                 Returns the current record's "nota" value
+ * @method decimal          getNota()                 Returns the current record's "nota" value
  * @method string           getCedula()               Returns the current record's "cedula" value
  * @method integer          getPnfId()                Returns the current record's "pnf_id" value
  * @method integer          getEstudianteId()         Returns the current record's "estudiante_id" value
  * @method string           getCodigo2()              Returns the current record's "codigo2" value
  * @method integer          getUnidadCurricularId()   Returns the current record's "unidad_curricular_id" value
  * @method integer          getId()                   Returns the current record's "id" value
- * @method UnidadCurricular getUnidadCurricular()     Returns the current record's "UnidadCurricular" value
- * @method Pnf              getPnf()                  Returns the current record's "Pnf" value
  * @method Estudiante       getEstudiante()           Returns the current record's "Estudiante" value
+ * @method Pnf              getPnf()                  Returns the current record's "Pnf" value
+ * @method UnidadCurricular getUnidadCurricular()     Returns the current record's "UnidadCurricular" value
  * @method Notas            setPeriodo()              Sets the current record's "periodo" value
  * @method Notas            setPasaporte()            Sets the current record's "pasaporte" value
  * @method Notas            setCodigoCarrera()        Sets the current record's "codigo_carrera" value
@@ -50,9 +50,9 @@ Doctrine_Manager::getInstance()->bindComponent('Notas', 'doctrine');
  * @method Notas            setCodigo2()              Sets the current record's "codigo2" value
  * @method Notas            setUnidadCurricularId()   Sets the current record's "unidad_curricular_id" value
  * @method Notas            setId()                   Sets the current record's "id" value
- * @method Notas            setUnidadCurricular()     Sets the current record's "UnidadCurricular" value
- * @method Notas            setPnf()                  Sets the current record's "Pnf" value
  * @method Notas            setEstudiante()           Sets the current record's "Estudiante" value
+ * @method Notas            setPnf()                  Sets the current record's "Pnf" value
+ * @method Notas            setUnidadCurricular()     Sets the current record's "UnidadCurricular" value
  * 
  * @package    preinscripcion
  * @subpackage model
@@ -104,13 +104,13 @@ abstract class BaseNotas extends sfDoctrineRecord
              'primary' => false,
              'length' => '',
              ));
-        $this->hasColumn('nota', 'string', null, array(
-             'type' => 'string',
+        $this->hasColumn('nota', 'decimal', 18, array(
+             'type' => 'decimal',
              'fixed' => 0,
              'unsigned' => false,
              'notnull' => false,
              'primary' => false,
-             'length' => '',
+             'length' => 18,
              ));
         $this->hasColumn('cedula', 'string', null, array(
              'type' => 'string',
@@ -165,16 +165,16 @@ abstract class BaseNotas extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('UnidadCurricular', array(
-             'local' => 'unidad_curricular_id',
+        $this->hasOne('Estudiante', array(
+             'local' => 'estudiante_id',
              'foreign' => 'id'));
 
         $this->hasOne('Pnf', array(
              'local' => 'pnf_id',
              'foreign' => 'id'));
 
-        $this->hasOne('Estudiante', array(
-             'local' => 'estudiante_id',
+        $this->hasOne('UnidadCurricular', array(
+             'local' => 'unidad_curricular_id',
              'foreign' => 'id'));
     }
 }

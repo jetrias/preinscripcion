@@ -27,6 +27,7 @@ class PreinscripcionCursoTable extends Doctrine_Table
                 left join pnf f on a.pnf_id=f.id
                 WHERE nacionalidad='$tipo'
                 AND identificacion='$identificacion'";
+            
         $q = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($sql);
         return $q;
     }
@@ -43,6 +44,11 @@ class PreinscripcionCursoTable extends Doctrine_Table
                 left join estado c on a.estado_id=c.id
                 group by c.descripcion,b.descripcion
                 order by 1,2";
+        $q = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($sql);
+        return $q;
+    }
+    public static function getPnfPre($id){
+        $sql="select * from pnf_pre where id=$id";
         $q = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($sql);
         return $q;
     }

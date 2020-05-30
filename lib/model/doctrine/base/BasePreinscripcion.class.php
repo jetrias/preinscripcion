@@ -36,6 +36,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @property string $ano_pre
  * @property string $ano_mgi
  * @property string $ano_otra
+ * @property integer $pnf_pre
  * @property Estado $Estado
  * @property Municipio $Municipio
  * @property PaisOrigen $PaisOrigen
@@ -72,6 +73,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @method string         getAnoPre()               Returns the current record's "ano_pre" value
  * @method string         getAnoMgi()               Returns the current record's "ano_mgi" value
  * @method string         getAnoOtra()              Returns the current record's "ano_otra" value
+ * @method integer        getPnfPre()               Returns the current record's "pnf_pre" value
  * @method Estado         getEstado()               Returns the current record's "Estado" value
  * @method Municipio      getMunicipio()            Returns the current record's "Municipio" value
  * @method PaisOrigen     getPaisOrigen()           Returns the current record's "PaisOrigen" value
@@ -107,6 +109,7 @@ Doctrine_Manager::getInstance()->bindComponent('Preinscripcion', 'doctrine');
  * @method Preinscripcion setAnoPre()               Sets the current record's "ano_pre" value
  * @method Preinscripcion setAnoMgi()               Sets the current record's "ano_mgi" value
  * @method Preinscripcion setAnoOtra()              Sets the current record's "ano_otra" value
+ * @method Preinscripcion setPnfPre()               Sets the current record's "pnf_pre" value
  * @method Preinscripcion setEstado()               Sets the current record's "Estado" value
  * @method Preinscripcion setMunicipio()            Sets the current record's "Municipio" value
  * @method Preinscripcion setPaisOrigen()           Sets the current record's "PaisOrigen" value
@@ -355,6 +358,14 @@ abstract class BasePreinscripcion extends sfDoctrineRecord
              'notnull' => false,
              'primary' => false,
              'length' => '',
+             ));
+        $this->hasColumn('pnf_pre', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'notnull' => false,
+             'primary' => false,
+             'length' => 4,
              ));
     }
 
